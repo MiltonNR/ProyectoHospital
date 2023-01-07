@@ -47,6 +47,11 @@ header .logohospital {
             
 }
 
+header nav {
+    align-self: flex-end;
+    justify-self: end;
+}
+
 @media only screen and (min-width: 768px) {
     header {
         background-color: #13A883;
