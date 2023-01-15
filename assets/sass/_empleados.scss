@@ -1,0 +1,301 @@
+.botonera_empleados {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 10px;
+	grid-template-rows: 1fr 1fr;
+
+}
+
+.boton_doctores, .boton_enfermeras, .boton_mantenimiento, .boton_recepcion {
+	background-color:#13A883;
+	border-radius:28px;
+	border:1px solid #13A883;
+    position: relative;
+    display: block;
+    width: 130px;
+	color:whitesmoke;
+	text-align: center;
+	font-size:13px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.boton_Ir_Arriba {
+    background-color:#13A883;
+	border-radius:28px;
+	border:1px solid #13A883;
+    position: relative;
+    display: block;
+    width: 200px;
+	cursor:pointer;
+	color:whitesmoke;
+	text-align: center;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .boton_doctores, .boton_enfermeras, .boton_mantenimiento, .boton_recepcion {
+        font-size:17px;
+        width: 200px;
+    }
+   
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .botonera_empleados {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .boton_doctores, .boton_enfermeras, .boton_mantenimiento, .boton_recepcion {
+        width: 200px;
+        font-size:17px;
+        padding:16px 31px;
+
+        &:hover {
+            background-color:whitesmoke;
+            transform: scale(1.3);
+            transition: 0.3s;
+            color: #13A883;
+        }
+        
+    }
+
+    .boton_Ir_Arriba {
+       
+         &:hover {
+            background-color:whitesmoke;
+            transform: scale(1.3);
+            transition: 0.3s;
+            color: #13A883;
+           
+        }
+    }
+  
+
+}
+
+.container_doctores {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #13A883;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.fotito_doctores {
+    margin-top: 10px;
+}
+
+.ultima_fotito_doctores {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container_doctores {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    
+    .fotito_doctores {
+        margin-right: 10px
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .container_doctores {
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+}
+
+.container_enfermeras {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #13A883;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.fotito_enfermeras {
+    margin-top: 10px;
+}
+
+.ultima_fotito_enfermeras {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container_enfermeras {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    
+    .fotito_enfermeras {
+        margin-right: 10px
+    }
+  
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .container_enfermeras {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+}
+
+.container_mantenimiento {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #13A883;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.fotito_mantenimiento {
+    margin-top: 10px;
+}
+
+.ultima_fotito_mantenimiento {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .container_mantenimiento {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+
+    }
+    
+    .fotito_mantenimiento {
+        margin-right: 10px
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .container_mantenimiento {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+}
+
+.container_recepcion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #13A883;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.fotito_recepcion {
+    margin-top: 10px;
+}
+
+.ultima_fotito_recepcion {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container_recepcion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    
+    .fotito_recepcion {
+        margin-right: 10px
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .container_recepcion {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+}
+
+

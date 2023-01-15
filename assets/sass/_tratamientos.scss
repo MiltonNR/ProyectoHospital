@@ -1,0 +1,518 @@
+.botonera_tratamientos {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 10px;
+	grid-template-rows: 1fr 1fr;
+}
+
+.boton_farmaceuticos, .boton_psiquiatricos, .boton_clinicos, .boton_quirurgicos {
+	background-color:#13A883;
+	border-radius:28px;
+	border:1px solid #13A883;
+    position: relative;
+    display: block;
+    width: 130px;
+	color:whitesmoke;
+	text-align: center;
+	font-size:13px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+    .botonera_tratamientos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 20px;
+    }
+    
+    .boton_farmaceuticos, .boton_psiquiatricos, .boton_clinicos, .boton_quirurgicos {
+        background-color:#13A883;
+        border-radius:28px;
+        border:1px solid #13A883;
+        position: relative;
+        display: block;
+        width: 180px;
+        cursor:pointer;
+        color:whitesmoke;
+        text-align: center;
+        font-size:17    px;
+        padding:16px 31px;
+        text-decoration:none;
+        margin: 0 auto;
+       
+    }
+   
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .botonera_tratamientos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .boton_farmaceuticos, .boton_psiquiatricos, .boton_clinicos, .boton_quirurgicos {
+        background-color:#13A883;
+        border-radius:28px;
+        border:1px solid #13A883;
+        position: relative;
+        display: block;
+        width: 200px;
+        cursor:pointer;
+        color:whitesmoke;
+        text-align: center;
+        font-size:17px;
+        padding:16px 31px;
+        text-decoration:none;
+        margin: 0 auto;
+
+        &:hover {
+            background-color:whitesmoke;
+            transform: scale(1.3);
+            transition: 0.3s;
+            color: #13A883;
+        }
+        
+    }
+  
+   
+
+}
+
+.container_clinicos {
+    background-color:#13A883 ;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+    .tabla_clinicos{
+        background-color: #13A883;
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .th_clinicos, .td_clinicos {
+        padding: 10px;
+        font-size: small;
+            
+    }
+    
+    .cabecera_clinicos{
+        background-color:#13A883;
+        border-bottom: solid 2px white;
+        color: white;
+    }
+    
+    tr:nth-child(even){
+        background-color:#13A883;
+    }
+    
+    tr:hover td{
+        background-color: white;
+        color: black;
+    }
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .tabla_clinicos{
+        background-color: #13A883;
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .th_clinicos, .td_clinicos {
+        padding: 20px;
+        font-size: large;    
+    }
+    
+    .cabecera_clinicos{
+        background-color:#13A883;
+        border-bottom: solid 2px white;
+        color: white;
+    }
+    
+    tr:nth-child(even){
+        background-color:#13A883;
+    }
+    
+    tr:hover td{
+        background-color: white;
+        color: black;
+    }
+    
+    }
+
+@media only screen and (min-width: 1024px) {
+
+.tabla_clinicos{
+	background-color: #13A883;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.th_clinicos, .td_clinicos{
+	padding: 20px;
+    font-size: large;
+        
+}
+
+.cabecera_clinicos{
+	background-color:#13A883;
+	border-bottom: solid 2px white;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color:#13A883;
+}
+
+tr:hover td{
+	background-color: white;
+	color: black;
+}
+
+}
+
+
+.container_farmaceuticos {
+    background-color:#13A883 ;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+    .tabla_farmaceuticos{
+        background-color: #13A883;
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .th_farmaceuticos, .td_farmaceuticos{
+        padding: 10px;
+        font-size: small;
+            
+    }
+    
+    .cabecera_farmaceuticos{
+        background-color:#13A883;
+        border-bottom: solid 2px white;
+        color: white;
+    }
+    
+    tr:nth-child(even){
+        background-color:#13A883;
+    }
+    
+    tr:hover td{
+        background-color: white;
+        color: black;
+    }
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .tabla_farmaceuticos{
+        background-color: #13A883;
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .th_farmaceuticos, .td_farmaceuticos{
+        padding: 20px;
+        font-size: large;    
+    }
+    
+    .cabecera_farmaceuticos{
+        background-color:#13A883;
+        border-bottom: solid 2px white;
+        color: white;
+    }
+    
+    tr:nth-child(even){
+        background-color:#13A883;
+    }
+    
+    tr:hover td{
+        background-color: white;
+        color: black;
+    }
+    
+    }
+
+@media only screen and (min-width: 1024px) {
+
+.tabla_farmaceuticos{
+	background-color: #13A883;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.th_farmaceuticos, .td_farmaceuticos{
+	padding: 20px;
+    font-size: large;
+        
+}
+
+.cabecera_farmaceuticos{
+	background-color:#13A883;
+	border-bottom: solid 2px white;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color:#13A883;
+}
+
+tr:hover td{
+	background-color: white;
+	color: black;
+}
+
+}
+
+.container_psiquiatricos {
+    background-color:#13A883 ;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+    .tabla_psiquiatricos {
+        background-color: #13A883;
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .th_psiquiatricos, .td_psiquiatricos {
+        padding: 10px;
+        font-size: small;
+            
+    }
+    
+    .cabecera_psiquiatricos{
+        background-color:#13A883;
+        border-bottom: solid 2px white;
+        color: white;
+    }
+    
+    tr:nth-child(even){
+        background-color:#13A883;
+    }
+    
+    tr:hover td{
+        background-color: white;
+        color: black;
+    }
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .tabla_psiquiatricos{
+        background-color: #13A883;
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .th_psiquiatricos, .td_psiquiatricos{
+        padding: 20px;
+        font-size: large;    
+    }
+    
+    .cabecera_psiquiatricos{
+        background-color:#13A883;
+        border-bottom: solid 2px white;
+        color: white;
+    }
+    
+    tr:nth-child(even){
+        background-color:#13A883;
+    }
+    
+    tr:hover td{
+        background-color: white;
+        color: black;
+    }
+    
+    }
+
+@media only screen and (min-width: 1024px) {
+
+.tabla_psiquiatricos{
+	background-color: #13A883;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.th_psiquiatricos, .td_psiquiatricos{
+	padding: 20px;
+    font-size: large;
+        
+}
+
+.cabecera_psiquiatricos{
+	background-color:#13A883;
+	border-bottom: solid 2px white;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color:#13A883;
+}
+
+tr:hover td{
+	background-color: white;
+	color: black;
+}
+
+}
+
+.container_quirurgico {
+    background-color:#13A883 ;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+    .tabla_quirurgico {
+        background-color: #13A883;
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .th_quirurgico, .td_quirurgico{
+        padding: 10px;
+        font-size: small;
+            
+    }
+    
+    .cabecera_quirurgico{
+        background-color:#13A883;
+        border-bottom: solid 2px white;
+        color: white;
+    }
+    
+    tr:nth-child(even){
+        background-color:#13A883;
+    }
+    
+    tr:hover td{
+        background-color: white;
+        color: black;
+    }
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .tabla_quirurgico{
+        background-color: #13A883;
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .th_quirurgico, .td_quirurgico{
+        padding: 20px;
+        font-size: large;    
+    }
+    
+    .cabecera_quirurgico{
+        background-color:#13A883;
+        border-bottom: solid 2px white;
+        color: white;
+    }
+    
+    tr:nth-child(even){
+        background-color:#13A883;
+    }
+    
+    tr:hover td{
+        background-color: white;
+        color: black;
+    }
+    
+    }
+
+@media only screen and (min-width: 1024px) {
+
+.tabla_quirurgico{
+	background-color: #13A883;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.th_quirurgico, .td_quirurgico{
+	padding: 20px;
+    font-size: large;
+        
+}
+
+.cabecera_quirurgico{
+	background-color:#13A883;
+	border-bottom: solid 2px white;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color:#13A883;
+}
+
+tr:hover td{
+	background-color: white;
+	color: black;
+}
+
+}

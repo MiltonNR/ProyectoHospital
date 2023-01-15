@@ -1,0 +1,269 @@
+@import url('https://fonts.cdnfonts.com/css/sudbury');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #13A883;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+header .logo {
+    width: 50px;
+    height: 50px;
+    border-right: #13A883;
+    background-color: #13A883;
+    font-style: none;
+          
+}
+
+
+header .titular {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    display: none;
+}
+
+header .logohospital {
+    width: 75px;
+    height: 50px;
+    border-right: #13A883;
+    background-color: #13A883;
+    margin-top: 10px;
+          
+            
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        height: 10vh;
+    }
+    
+   
+    header .titular {
+        font-size: 15px;
+        display: block;
+    }
+    
+
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        height: 20vh;
+        max-height: 300px;
+    }
+    
+    header .logo {
+        width: 100px;
+        height: 100px;
+        border-right: #13A883;
+        background-color: #13A883;
+        font-style: none;
+      
+            
+    }
+    
+    header .titular {
+        font-size: 30px;
+    }
+    
+    header .logohospital {
+        width: 150px;
+        height: 100px;
+   
+    }
+    
+}
+
+body {
+    background-color: whitesmoke;
+    color: rgb(255, 255, 255);
+    font-family: 'Sudbury Light', sans-serif;
+    border-radius: 6px;
+ 
+}
+
+nav {
+    background-color: #13A883;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    
+}
+
+
+nav div {
+    background-color: #13A883;
+    border-radius: 6px;
+}
+
+.barra_botones {
+    color: white;
+
+    &:hover {
+        color:#13A883;
+        background-color: white;
+        border-radius: 6px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+        
+    }
+
+    &:active {
+        color: white;
+               
+    }
+
+    &:focus {
+        color: white;
+               
+    }
+
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+
+    &:hover {
+        color:#13A883;
+        background-color: white;
+        border-radius: 6px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+.btn-outline-success {
+    color:white;
+    border-color: white;
+
+    &:hover {
+        color:#13A883;
+        border-color:#13A883;
+        background-color: white;
+    }
+}
+
+
+
+.dropdown-menu {
+    background:#13A883;
+    color: white;
+}
+
+.dropdown-divider {
+    background-color: white;
+    color: white;
+}
+
+.dropdown-item {
+    color: white;
+
+    &:hover {
+        color:#13A883;
+    }
+}
+
+
+#carouselExampleCaptions {
+    background-color: #13A883;
+    background-size: 100%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.foto {
+    width: 100%;
+    
+}
+
+.slogan {
+    position: absolute;
+    font-size: 10px;
+    bottom: 30px;
+    left: 10px;
+    color: #13A883;
+    background-color: white;
+    opacity: 0.8;
+    border: #13A883;
+    border-style: solid;
+    border-width: 2px;
+       
+}
+
+@media only screen and (min-width: 768px) {
+    .slogan {
+        font-size: 20px;
+        bottom: 60px;
+        color: #13A883;
+
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .slogan {
+        bottom: 90px;
+    }
+    
+}
+
+footer {
+    background-color: #13A883;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+
+}
+
+footer ul {
+    padding-inline-start: 5px;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: small;
+}
+
+footer ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: small;
+}
+
+@media only screen and (min-width: 1024px) {
+   
+    footer ul li {
+        font-size: 15px;
+    }
+    
+    footer ul li a {
+        font-size: 15px;
+    }
+
+}

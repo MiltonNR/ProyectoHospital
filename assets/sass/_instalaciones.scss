@@ -1,0 +1,56 @@
+.instalaciones_container {
+    background-color:#13A883 ;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-top: 20px   ;
+}
+
+.gallery_instalaciones {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  }
+  
+  .gallery_instalaciones img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px; 
+    transition: transform 0.2s; 
+    border-width: 3px;
+    border-color: white;
+    border-style:solid;
+  }
+  
+  .gallery_instalaciones img:hover {
+    transform: scale(1.5); 
+  }
+
+  @media only screen and (min-width: 768px){
+    .gallery_instalaciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        
+    }
+
+  }
+
+  @media only screen and (min-width: 1024px){
+    .gallery_instalaciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+  }
