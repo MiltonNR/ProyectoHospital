@@ -939,11 +939,11 @@ footer ul li a {
 	border:1px solid #13A883;
     position: relative;
     display: block;
-    width: 200px;
+    width: 150px;
 	cursor:pointer;
 	color:whitesmoke;
 	text-align: center;
-	font-size:17px;
+	font-size:13px;
 	padding:16px 31px;
 	text-decoration:none;
     margin: 0 auto;
@@ -1446,11 +1446,11 @@ footer ul li a {
 	border:1px solid #13A883;
     position: relative;
     display: block;
-    width: 200px;
+    width: 150px;
 	cursor:pointer;
 	color:whitesmoke;
 	text-align: center;
-	font-size:17px;
+	font-size:13px;
 	padding:16px 31px;
 	text-decoration:none;
     margin: 0 auto;
@@ -1477,11 +1477,11 @@ footer ul li a {
         border:1px solid #13A883;
         position: relative;
         display: block;
-        width: 200px;
+        width: 150px;
         cursor:pointer;
         color:whitesmoke;
         text-align: center;
-        font-size:17px;
+        font-size:13    px;
         padding:16px 31px;
         text-decoration:none;
         margin: 0 auto;
@@ -1556,7 +1556,7 @@ footer ul li a {
         width: 100%;
     }
     
-    .th_clinicos, .td_clinicos{
+    .th_clinicos, .td_clinicos {
         padding: 10px;
         font-size: small;
             
@@ -1588,7 +1588,7 @@ footer ul li a {
         width: 100%;
     }
     
-    .th_clinicos, .td_clinicos{
+    .th_clinicos, .td_clinicos {
         padding: 20px;
         font-size: large;    
     }
@@ -2015,8 +2015,8 @@ tr:hover td{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
     }
   }
   
@@ -2241,13 +2241,13 @@ tr:hover td{
 }
 
 .foto_noticia {
-    width: 400px;
-    height: 800px;
+    width: 300px;
+    height: 250px;
 }
 
 .video_noticia {
-    width: 400px;
-    height: 300px;
+    width: 80%;
+    height: 70%;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -2255,7 +2255,7 @@ tr:hover td{
 .bajada_noticia {
     justify-content: center;
     text-align: justify;
-    font-size: large;
+    font-size: small;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -2263,12 +2263,14 @@ tr:hover td{
 .autor_noticia {
     align-self: flex-start;
     margin-left: 60px;
+    font-size: small;
 }
 
 .nota_noticia {
     text-align: justify;
     margin-left: 20px;
     margin-right: 20px;
+    font-size: small;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2490,9 +2492,10 @@ tr:hover td{
     }
     
     .foto_noticia {
-        width: 100%;
-        max-width: 1000px;
+        width: 700px;
+        height: 600px;
     }
+
     
     .bajada_noticia {
         justify-content: center;
@@ -2502,11 +2505,16 @@ tr:hover td{
     
     .autor_noticia {
         justify-content:left;
+        font-size: medium;
     }
 
     .video_noticia {
-        width: 900px;
-        height: 500px;
+        width: 700px;
+        height: 400px;
+    }
+
+    .nota_noticia {
+        font-size: normal;
     }
 
 
