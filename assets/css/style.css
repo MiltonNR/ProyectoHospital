@@ -170,6 +170,15 @@ nav div {
     
 }
 
+.barra_botones:active {
+    color:white;
+}
+
+.barra_botones:focus {
+    color:white;
+}
+
+
 .navbar-nav .nav-link.active {
     color: white;
 }
@@ -307,7 +316,7 @@ nav div {
 }
 
 #container_preview {
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 6px;
     background-size: 100%;
     margin-bottom: 20px;
@@ -317,7 +326,7 @@ nav div {
 }
 
 .bloque_preview {
-    background-color:whitesmoke;
+    background-color:white;
     border-radius: 6px;
     text-align: center;
     margin-top: 5px;
@@ -1476,7 +1485,7 @@ footer ul li a {
         
     }
     
-    .boton_doctores:hover, .boton_enfermeras:hover, .boton_mantenimiento:hover, .boton_recepcion:hover {
+    .boton_farmaceuticos:hover, .boton_psiquiatricos:hover, .boton_clinicos:hover, .boton_quirurgicos:hover {
         background-color:whitesmoke;
         transform: scale(1.3);
         transition: 0.3s;
@@ -1960,8 +1969,54 @@ tr:hover td{
     border-radius: 6px;
     margin-top: 20px;
     padding-left: 10px;
+    padding-top: 20px   ;
 }
 
+.gallery_instalaciones {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  }
+  
+  .gallery_instalaciones img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px; 
+    transition: transform 0.2s; 
+    border-width: 3px;
+    border-color: white;
+    border-style:solid;
+  }
+  
+  .gallery_instalaciones img:hover {
+    transform: scale(1.5); 
+  }
+
+  @media only screen and (min-width: 768px){
+    .gallery_instalaciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        
+    }
+
+  }
+
+  @media only screen and (min-width: 1024px){
+    .gallery_instalaciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+  }
+  
 /*Noticias*/
 
 #container_noticias {
@@ -2183,23 +2238,34 @@ tr:hover td{
 }
 
 .foto_noticia {
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    height: 800px;
+}
+
+.video_noticia {
+    width: 400px;
+    height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .bajada_noticia {
     justify-content: center;
     text-align: justify;
     font-size: large;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .autor_noticia {
     align-self: flex-start;
-    
+    margin-left: 60px;
 }
 
 .nota_noticia {
     text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2435,6 +2501,12 @@ tr:hover td{
         justify-content:left;
     }
 
+    .video_noticia {
+        width: 900px;
+        height: 500px;
+    }
+
+
 }
 
 /*Shop*/
@@ -2449,13 +2521,111 @@ tr:hover td{
     border-radius: 6px;
     margin-bottom: 20px;
     margin-top: 20px;
+    justify-content: center;
 }
 
-.fake_shop {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
+.productos_shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color:#13A883;
+    border-style: solid;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
 }
+
+.productos_shop_img{
+    width: 45%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.productos_shop_titular{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 20px;
+
+}
+
+.productos_shop_titular h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.productos_shop_descripcion{
+    width: 85%;
+    font-size: 14px;
+}
+
+.btn-shop{
+    margin-top: 20px;
+    padding: 10px;
+    background-color:#13A883;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    align-self:flex-end ;
+    margin-right: 10px;
+}
+
+.btn-shop:hover{
+    margin-top: 20px;
+    padding: 10px;
+    background-color:white;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color:#13A883;
+    color:#13A883;
+}
+
+@media only screen and (min-width: 768px) {
+    .shop_productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        border-radius: 6px;
+        background-color:#13A883;
+   
+    }
+
+}
+
+@media only screen and (min-width: 1048px) {
+    .shop_productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        border-radius: 6px;
+        background-color:#13A883;
+   
+    }
+
+}
+
+
 /*Buscador*/
 
 #buscador {
