@@ -1,0 +1,113 @@
+#shop {
+    display: flex;
+	align-items: flex-start;
+    background-color: #13A883;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.productos_shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background-color:#13A883;
+    border-style: solid;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+.productos_shop_img{
+    width: 45%;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.productos_shop_titular{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 20px;
+
+}
+
+.productos_shop_titular h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.productos_shop_descripcion{
+    width: 85%;
+    font-size: 14px;
+}
+
+.btn-shop{
+    margin-top: 20px;
+    padding: 10px;
+    background-color:#13A883;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    align-self:flex-end ;
+    margin-right: 10px;
+
+    &:hover {
+        margin-top: 20px;
+        padding: 10px;
+        background-color:white;
+        border-radius: 6px;
+        font-size: 14px;
+        text-decoration: none;
+        border-style: solid;
+        border-width: 2px;
+        border-color:#13A883;
+        color:#13A883;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .shop_productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        border-radius: 6px;
+        background-color:#13A883;
+   
+    }
+
+}
+
+@media only screen and (min-width: 1048px) {
+    .shop_productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        border-radius: 6px;
+        background-color:#13A883;
+   
+    }
+
+}

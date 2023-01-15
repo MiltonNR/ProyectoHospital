@@ -1,0 +1,159 @@
+#turnos {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    background-color: #13A883;
+    background-size: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.calendario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo_calendario {
+    margin-bottom: 15px;
+    font-size: larger;
+}
+
+.foto_calendario {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.mes_calendario {
+    margin-bottom: 15px;
+    margin-top: 10px;   
+    padding-right: 70px;
+}
+
+.input_mes {
+    width: 138%;
+}
+
+.turnera{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.turnera_especialidad {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.input_especialidad {
+    margin-bottom: 25px;
+    width: 100%;
+}
+.turnera_fecha {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.input_fecha {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.turnera_especialista {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+.text_area_especialista {
+    width: 100%;
+} 
+
+.turnera_boton {
+	background-color: whitesmoke;
+	border-radius:28px;
+	border:3px solid #13A883;
+    position: relative;
+    display: block;
+    width: 200px;
+	cursor:pointer;
+	color:#13A883;
+	text-align: center;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px){
+    #turnos {
+        flex-direction: row;
+    }
+    
+   
+    .turnera_especialidad {
+        margin-top: 90px;
+    }
+    
+    .input_especialidad {
+        width: 97%;
+        margin-right: 2px;
+    }
+   
+    .input_fecha {
+        margin-bottom: 16px;
+        width: 97%;
+        margin-right: 2px;
+    }
+    
+    .text_area_especialista {
+        width: 97%;
+        margin-right: 2px;
+    } 
+    
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .input_especialidad {
+    width: 100%;
+    }
+
+    .input_fecha {
+    margin-bottom: 25px;
+    width: 100%;
+    }
+
+    .text_area_especialista {
+    margin-bottom: 25px;
+    width: 100%;
+    }       
+
+    .turnera_boton {
+	background-color:#13A883;
+	border:3px solid whitesmoke;
+    color:whitesmoke;
+	margin-bottom: 10px;
+
+     &:hover {
+        background-color:whitesmoke;
+	    transform: scale(1.3);
+	    transition: 0.3s;
+        color: #13A883;
+     }
+    }
+
+}
