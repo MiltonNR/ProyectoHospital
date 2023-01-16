@@ -1300,6 +1300,7 @@ tr:hover td {
   border-width: 3px;
   border-color: white;
   border-style: solid;
+  margin-bottom: 10px;
 }
 
 .gallery_instalaciones img:hover {
