@@ -27,6 +27,7 @@
     border-width: 3px;
     border-color: white;
     border-style:solid;
+    margin-bottom: 10px;
   }
   
   .gallery_instalaciones img:hover {
@@ -40,7 +41,7 @@
         grid-template-rows: auto;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
-        
+            
     }
 
   }
