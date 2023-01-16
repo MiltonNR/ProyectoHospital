@@ -7,9 +7,9 @@
 }
 
 .boton_doctores, .boton_enfermeras, .boton_mantenimiento, .boton_recepcion {
-	background-color:#13A883;
+	background-color:$colorprincipal;
 	border-radius:28px;
-	border:1px solid #13A883;
+	border:1px solid $colorprincipal;
     position: relative;
     display: block;
     width: 130px;
@@ -25,9 +25,9 @@
 }
 
 .boton_Ir_Arriba {
-    background-color:#13A883;
+    background-color:$colorprincipal;
 	border-radius:28px;
-	border:1px solid #13A883;
+	border:1px solid $colorprincipal;
     position: relative;
     display: block;
     width: 200px;
@@ -74,7 +74,7 @@
             background-color:whitesmoke;
             transform: scale(1.3);
             transition: 0.3s;
-            color: #13A883;
+            color: $colorprincipal;
         }
         
     }
@@ -85,7 +85,7 @@
             background-color:whitesmoke;
             transform: scale(1.3);
             transition: 0.3s;
-            color: #13A883;
+            color: $colorprincipal;
            
         }
     }
@@ -100,7 +100,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: #13A883;
+    background-color: $colorprincipal;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -148,7 +148,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: #13A883;
+    background-color: $colorprincipal;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -200,7 +200,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: #13A883;
+    background-color: $colorprincipal;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -254,7 +254,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: #13A883;
+    background-color: $colorprincipal;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;

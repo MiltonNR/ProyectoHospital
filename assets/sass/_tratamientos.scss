@@ -6,9 +6,9 @@
 }
 
 .boton_farmaceuticos, .boton_psiquiatricos, .boton_clinicos, .boton_quirurgicos {
-	background-color:#13A883;
+	background-color:$colorprincipal;
 	border-radius:28px;
-	border:1px solid #13A883;
+	border:1px solid $colorprincipal;
     position: relative;
     display: block;
     width: 130px;
@@ -34,9 +34,9 @@
     }
     
     .boton_farmaceuticos, .boton_psiquiatricos, .boton_clinicos, .boton_quirurgicos {
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-radius:28px;
-        border:1px solid #13A883;
+        border:1px solid $colorprincipal;
         position: relative;
         display: block;
         width: 180px;
@@ -65,9 +65,9 @@
     }
     
     .boton_farmaceuticos, .boton_psiquiatricos, .boton_clinicos, .boton_quirurgicos {
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-radius:28px;
-        border:1px solid #13A883;
+        border:1px solid $colorprincipal;
         position: relative;
         display: block;
         width: 200px;
@@ -83,7 +83,7 @@
             background-color:whitesmoke;
             transform: scale(1.3);
             transition: 0.3s;
-            color: #13A883;
+            color: $colorprincipal;
         }
         
     }
@@ -93,7 +93,7 @@
 }
 
 .container_clinicos {
-    background-color:#13A883 ;
+    background-color:$colorprincipal ;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -106,7 +106,7 @@
 }
 
     .tabla_clinicos{
-        background-color: #13A883;
+        background-color: $colorprincipal;
         text-align: left;
         border-collapse: collapse;
         width: 100%;
@@ -119,13 +119,13 @@
     }
     
     .cabecera_clinicos{
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-bottom: solid 2px white;
         color: white;
     }
     
     tr:nth-child(even){
-        background-color:#13A883;
+        background-color:$colorprincipal;
     }
     
     tr:hover td{
@@ -138,7 +138,7 @@
 @media only screen and (min-width: 768px) {
 
     .tabla_clinicos{
-        background-color: #13A883;
+        background-color: $colorprincipal;
         text-align: left;
         border-collapse: collapse;
         width: 100%;
@@ -150,13 +150,13 @@
     }
     
     .cabecera_clinicos{
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-bottom: solid 2px white;
         color: white;
     }
     
     tr:nth-child(even){
-        background-color:#13A883;
+        background-color:$colorprincipal;
     }
     
     tr:hover td{
@@ -169,7 +169,7 @@
 @media only screen and (min-width: 1024px) {
 
 .tabla_clinicos{
-	background-color: #13A883;
+	background-color: $colorprincipal;
 	text-align: left;
 	border-collapse: collapse;
 	width: 100%;
@@ -182,13 +182,13 @@
 }
 
 .cabecera_clinicos{
-	background-color:#13A883;
+	background-color:$colorprincipal;
 	border-bottom: solid 2px white;
 	color: white;
 }
 
 tr:nth-child(even){
-	background-color:#13A883;
+	background-color:$colorprincipal;
 }
 
 tr:hover td{
@@ -200,7 +200,7 @@ tr:hover td{
 
 
 .container_farmaceuticos {
-    background-color:#13A883 ;
+    background-color:$colorprincipal ;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -213,7 +213,7 @@ tr:hover td{
 }
 
     .tabla_farmaceuticos{
-        background-color: #13A883;
+        background-color: $colorprincipal;
         text-align: left;
         border-collapse: collapse;
         width: 100%;
@@ -226,13 +226,13 @@ tr:hover td{
     }
     
     .cabecera_farmaceuticos{
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-bottom: solid 2px white;
         color: white;
     }
     
     tr:nth-child(even){
-        background-color:#13A883;
+        background-color:$colorprincipal;
     }
     
     tr:hover td{
@@ -245,7 +245,7 @@ tr:hover td{
 @media only screen and (min-width: 768px) {
 
     .tabla_farmaceuticos{
-        background-color: #13A883;
+        background-color: $colorprincipal;
         text-align: left;
         border-collapse: collapse;
         width: 100%;
@@ -257,13 +257,13 @@ tr:hover td{
     }
     
     .cabecera_farmaceuticos{
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-bottom: solid 2px white;
         color: white;
     }
     
     tr:nth-child(even){
-        background-color:#13A883;
+        background-color:$colorprincipal;
     }
     
     tr:hover td{
@@ -276,7 +276,7 @@ tr:hover td{
 @media only screen and (min-width: 1024px) {
 
 .tabla_farmaceuticos{
-	background-color: #13A883;
+	background-color: $colorprincipal;
 	text-align: left;
 	border-collapse: collapse;
 	width: 100%;
@@ -289,13 +289,13 @@ tr:hover td{
 }
 
 .cabecera_farmaceuticos{
-	background-color:#13A883;
+	background-color:$colorprincipal;
 	border-bottom: solid 2px white;
 	color: white;
 }
 
 tr:nth-child(even){
-	background-color:#13A883;
+	background-color:$colorprincipal;
 }
 
 tr:hover td{
@@ -306,7 +306,7 @@ tr:hover td{
 }
 
 .container_psiquiatricos {
-    background-color:#13A883 ;
+    background-color:$colorprincipal ;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -319,7 +319,7 @@ tr:hover td{
 }
 
     .tabla_psiquiatricos {
-        background-color: #13A883;
+        background-color: $colorprincipal;
         text-align: left;
         border-collapse: collapse;
         width: 100%;
@@ -332,13 +332,13 @@ tr:hover td{
     }
     
     .cabecera_psiquiatricos{
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-bottom: solid 2px white;
         color: white;
     }
     
     tr:nth-child(even){
-        background-color:#13A883;
+        background-color:$colorprincipal;
     }
     
     tr:hover td{
@@ -351,7 +351,7 @@ tr:hover td{
 @media only screen and (min-width: 768px) {
 
     .tabla_psiquiatricos{
-        background-color: #13A883;
+        background-color: $colorprincipal;
         text-align: left;
         border-collapse: collapse;
         width: 100%;
@@ -363,13 +363,13 @@ tr:hover td{
     }
     
     .cabecera_psiquiatricos{
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-bottom: solid 2px white;
         color: white;
     }
     
     tr:nth-child(even){
-        background-color:#13A883;
+        background-color:$colorprincipal;
     }
     
     tr:hover td{
@@ -382,7 +382,7 @@ tr:hover td{
 @media only screen and (min-width: 1024px) {
 
 .tabla_psiquiatricos{
-	background-color: #13A883;
+	background-color: $colorprincipal;
 	text-align: left;
 	border-collapse: collapse;
 	width: 100%;
@@ -395,13 +395,13 @@ tr:hover td{
 }
 
 .cabecera_psiquiatricos{
-	background-color:#13A883;
+	background-color:$colorprincipal;
 	border-bottom: solid 2px white;
 	color: white;
 }
 
 tr:nth-child(even){
-	background-color:#13A883;
+	background-color:$colorprincipal;
 }
 
 tr:hover td{
@@ -412,7 +412,7 @@ tr:hover td{
 }
 
 .container_quirurgico {
-    background-color:#13A883 ;
+    background-color:$colorprincipal ;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -425,7 +425,7 @@ tr:hover td{
 }
 
     .tabla_quirurgico {
-        background-color: #13A883;
+        background-color: $colorprincipal;
         text-align: left;
         border-collapse: collapse;
         width: 100%;
@@ -438,13 +438,13 @@ tr:hover td{
     }
     
     .cabecera_quirurgico{
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-bottom: solid 2px white;
         color: white;
     }
     
     tr:nth-child(even){
-        background-color:#13A883;
+        background-color:$colorprincipal;
     }
     
     tr:hover td{
@@ -457,7 +457,7 @@ tr:hover td{
 @media only screen and (min-width: 768px) {
 
     .tabla_quirurgico{
-        background-color: #13A883;
+        background-color: $colorprincipal;
         text-align: left;
         border-collapse: collapse;
         width: 100%;
@@ -469,13 +469,13 @@ tr:hover td{
     }
     
     .cabecera_quirurgico{
-        background-color:#13A883;
+        background-color:$colorprincipal;
         border-bottom: solid 2px white;
         color: white;
     }
     
     tr:nth-child(even){
-        background-color:#13A883;
+        background-color:$colorprincipal;
     }
     
     tr:hover td{
@@ -488,7 +488,7 @@ tr:hover td{
 @media only screen and (min-width: 1024px) {
 
 .tabla_quirurgico{
-	background-color: #13A883;
+	background-color: $colorprincipal;
 	text-align: left;
 	border-collapse: collapse;
 	width: 100%;
@@ -501,13 +501,13 @@ tr:hover td{
 }
 
 .cabecera_quirurgico{
-	background-color:#13A883;
+	background-color:$colorprincipal;
 	border-bottom: solid 2px white;
 	color: white;
 }
 
 tr:nth-child(even){
-	background-color:#13A883;
+	background-color:$colorprincipal;
 }
 
 tr:hover td{

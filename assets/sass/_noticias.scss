@@ -24,7 +24,7 @@
 
 .noticia_1{
     grid-area: a;
-    background-color:#13A883;
+    background-color:$colorprincipal;
     border-radius: 6px;
     text-align: center;
     margin-top: 10px;
@@ -58,7 +58,7 @@
 
 .noticia_2 {
     grid-area: b;
-    background-color:#13A883;
+    background-color:$colorprincipal;
     border-radius: 6px;
     text-align: center;
     margin-top: 10px;
@@ -91,7 +91,7 @@
 
 .noticia_3{
     grid-area: c;
-    background-color:#13A883;
+    background-color:$colorprincipal;
     border-radius: 6px;
     text-align: center;
     margin-top: 10px;
@@ -124,7 +124,7 @@
 
 .noticia_4 {
     grid-area: d;
-    background-color:#13A883;
+    background-color:$colorprincipal;
     border-radius: 6px;
     text-align: center;
     margin-top: 10px;
@@ -158,7 +158,7 @@
 
 .noticia_5 {
     grid-area: e;
-    background-color:#13A883;
+    background-color:$colorprincipal;
     border-radius: 6px;
     text-align: center;
     margin-top: 10px;
@@ -193,7 +193,7 @@
 
 #news_feed_1, #news_feed_2, #news_feed_3,
 #news_feed_4, #news_feed_5 {
-    background-color: #13A883;
+    background-color: $colorprincipal;
     background-size: 100%;
 	margin-top: 20px;
     margin-bottom: 20px;
