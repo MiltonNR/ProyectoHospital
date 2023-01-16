@@ -5,9 +5,11 @@
     padding: 0;
 }
 
+//variables las cajas
+$colorprincipal:  #13A883;
 
 header {
-    background-color: #13A883;
+    background-color: $colorprincipal;
     background-size: 100%;
     display: flex;
     align-items: center;
@@ -22,8 +24,8 @@ header {
 header .logo {
     width: 50px;
     height: 50px;
-    border-right: #13A883;
-    background-color: #13A883;
+    border-right: $colorprincipal;
+    background-color: $colorprincipal;
     font-style: none;
           
 }
@@ -39,8 +41,8 @@ header .titular {
 header .logohospital {
     width: 75px;
     height: 50px;
-    border-right: #13A883;
-    background-color: #13A883;
+    border-right: $colorprincipal;
+    background-color: $colorprincipal;
     margin-top: 10px;
           
             
@@ -70,8 +72,8 @@ header .logohospital {
     header .logo {
         width: 100px;
         height: 100px;
-        border-right: #13A883;
-        background-color: #13A883;
+        border-right: $colorprincipal;
+        background-color: $colorprincipal;
         font-style: none;
       
             
@@ -98,7 +100,7 @@ body {
 }
 
 nav {
-    background-color: #13A883;
+    background-color: $colorprincipal;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -109,7 +111,7 @@ nav {
 
 
 nav div {
-    background-color: #13A883;
+    background-color: $colorprincipal;
     border-radius: 6px;
 }
 
@@ -117,7 +119,7 @@ nav div {
     color: white;
 
     &:hover {
-        color:#13A883;
+        color:$colorprincipal;
         background-color: white;
         border-radius: 6px;
         padding-top: 5px;
@@ -143,7 +145,7 @@ nav div {
     color: white;
 
     &:hover {
-        color:#13A883;
+        color:$colorprincipal;
         background-color: white;
         border-radius: 6px;
         padding-top: 5px;
@@ -158,8 +160,8 @@ nav div {
     border-color: white;
 
     &:hover {
-        color:#13A883;
-        border-color:#13A883;
+        color:$colorprincipal;
+        border-color:$colorprincipal;
         background-color: white;
     }
 }
@@ -167,7 +169,7 @@ nav div {
 
 
 .dropdown-menu {
-    background:#13A883;
+    background:$colorprincipal;
     color: white;
 }
 
@@ -180,13 +182,13 @@ nav div {
     color: white;
 
     &:hover {
-        color:#13A883;
+        color:$colorprincipal;
     }
 }
 
 
 #carouselExampleCaptions {
-    background-color: #13A883;
+    background-color: $colorprincipal;
     background-size: 100%;
     margin-bottom: 20px;
     border-radius: 6px;
@@ -206,10 +208,10 @@ nav div {
     font-size: 10px;
     bottom: 30px;
     left: 10px;
-    color: #13A883;
+    color: $colorprincipal;
     background-color: white;
     opacity: 0.8;
-    border: #13A883;
+    border: $colorprincipal;
     border-style: solid;
     border-width: 2px;
        
@@ -219,7 +221,7 @@ nav div {
     .slogan {
         font-size: 20px;
         bottom: 60px;
-        color: #13A883;
+        color: $colorprincipal;
 
     }
     
@@ -233,7 +235,7 @@ nav div {
 }
 
 footer {
-    background-color: #13A883;
+    background-color: $colorprincipal;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
