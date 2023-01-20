@@ -1,3 +1,6 @@
+@use '_commons' as c;
+
+
 #formularios_contactus {
     display: flex;
     flex-direction: column;
@@ -5,7 +8,7 @@
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
-    background-color: $colorprincipal;
+    background-color: map-get(c.$colores,"principal");
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -39,7 +42,7 @@
 }
 
 .boton_contactus {
-	background-color:$colorprincipal;
+	background-color:map-get(c.$colores,"principal");
 	border-radius:6px;
 	border:1px solid whitesmoke;
     position: relative;
@@ -57,7 +60,7 @@
         background-color:whitesmoke;
         transform: scale(1.3);
         transition: 0.3s;
-        color:$colorprincipal;
+        color:map-get(c.$colores,"principal");
     }
 }
 

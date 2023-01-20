@@ -5,11 +5,15 @@
     padding: 0;
 }
 
-//variables las cajas
-$colorprincipal:  #13A883;
+// Variables de Color 
+
+$colores:(
+    principal:#13A883,
+    secundario: #89d3c1,   
+);
 
 header {
-    background-color: $colorprincipal;
+    background-color: map-get($colores,"principal");
     background-size: 100%;
     display: flex;
     align-items: center;
@@ -24,8 +28,8 @@ header {
 header .logo {
     width: 50px;
     height: 50px;
-    border-right: $colorprincipal;
-    background-color: $colorprincipal;
+    border-right: map-get($colores,"principal");
+    background-color: map-get($colores,"principal");
     font-style: none;
           
 }
@@ -41,8 +45,8 @@ header .titular {
 header .logohospital {
     width: 75px;
     height: 50px;
-    border-right: $colorprincipal;
-    background-color: $colorprincipal;
+    border-right: map-get($colores,"principal");
+    background-color: map-get($colores,"principal");
     margin-top: 10px;
           
             
@@ -72,8 +76,8 @@ header .logohospital {
     header .logo {
         width: 100px;
         height: 100px;
-        border-right: $colorprincipal;
-        background-color: $colorprincipal;
+        border-right: map-get($colores,"principal");
+        background-color: map-get($colores,"principal");
         font-style: none;
       
             
@@ -100,7 +104,7 @@ body {
 }
 
 nav {
-    background-color: $colorprincipal;
+    background-color: map-get($colores,"principal");
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -111,7 +115,7 @@ nav {
 
 
 nav div {
-    background-color: $colorprincipal;
+    background-color: map-get($colores,"principal");
     border-radius: 6px;
 }
 
@@ -119,7 +123,7 @@ nav div {
     color: white;
 
     &:hover {
-        color:$colorprincipal;
+        color:map-get($colores,"principal");
         background-color: white;
         border-radius: 6px;
         padding-top: 5px;
@@ -145,7 +149,7 @@ nav div {
     color: white;
 
     &:hover {
-        color:$colorprincipal;
+        color:map-get($colores,"principal");
         background-color: white;
         border-radius: 6px;
         padding-top: 5px;
@@ -160,8 +164,8 @@ nav div {
     border-color: white;
 
     &:hover {
-        color:$colorprincipal;
-        border-color:$colorprincipal;
+        color:map-get($colores,"principal");
+        border-color:map-get($colores,"principal");
         background-color: white;
     }
 }
@@ -169,7 +173,7 @@ nav div {
 
 
 .dropdown-menu {
-    background:$colorprincipal;
+    background:map-get($colores,"principal");
     color: white;
 }
 
@@ -182,60 +186,15 @@ nav div {
     color: white;
 
     &:hover {
-        color:$colorprincipal;
+        color:map-get($colores,"principal");
     }
 }
 
 
-#carouselExampleCaptions {
-    background-color: $colorprincipal;
-    background-size: 100%;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    position: relative;
-}
 
-.foto {
-    width: 100%;
-    
-}
-
-.slogan {
-    position: absolute;
-    font-size: 10px;
-    bottom: 30px;
-    left: 10px;
-    color: $colorprincipal;
-    background-color: white;
-    opacity: 0.8;
-    border: $colorprincipal;
-    border-style: solid;
-    border-width: 2px;
-       
-}
-
-@media only screen and (min-width: 768px) {
-    .slogan {
-        font-size: 20px;
-        bottom: 60px;
-        color: $colorprincipal;
-
-    }
-    
-}
-
-@media only screen and (min-width: 1024px) {
-    .slogan {
-        bottom: 90px;
-    }
-    
-}
 
 footer {
-    background-color: $colorprincipal;
+    background-color: map-get($colores,"principal");
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;

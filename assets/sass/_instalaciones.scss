@@ -1,5 +1,8 @@
+@use '_commons' as c;
+
+
 .instalaciones_container {
-    background-color:$colorprincipal ;
+    background-color:map-get(c.$colores,"principal") ;
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
