@@ -149,46 +149,6 @@ nav div {
   color: #13A883;
 }
 
-#carouselExampleCaptions {
-  background-color: #13A883;
-  background-size: 100%;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  position: relative;
-}
-
-.foto {
-  width: 100%;
-}
-
-.slogan {
-  position: absolute;
-  font-size: 10px;
-  bottom: 30px;
-  left: 10px;
-  color: #13A883;
-  background-color: white;
-  opacity: 0.8;
-  border: #13A883;
-  border-style: solid;
-  border-width: 2px;
-}
-
-@media only screen and (min-width: 768px) {
-  .slogan {
-    font-size: 20px;
-    bottom: 60px;
-    color: #13A883;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .slogan {
-    bottom: 90px;
-  }
-}
 footer {
   background-color: #13A883;
   background-size: 100%;
@@ -219,6 +179,46 @@ footer ul li a {
   }
   footer ul li a {
     font-size: 15px;
+  }
+}
+#carouselExampleCaptions {
+  background-color: #13A883;
+  background-size: 100%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.foto {
+  width: 100%;
+}
+
+.slogan {
+  position: absolute;
+  font-size: 10px;
+  bottom: 30px;
+  left: 10px;
+  color: #13a833;
+  background-color: white;
+  opacity: 0.8;
+  border: #13A883;
+  border-style: solid;
+  border-width: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .slogan {
+    font-size: 20px;
+    bottom: 60px;
+    color: #13A883;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .slogan {
+    bottom: 90px;
   }
 }
 #titulo_noticias {
@@ -600,7 +600,7 @@ footer ul li a {
   width: 130px;
   color: whitesmoke;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   padding: 16px 31px;
   text-decoration: none;
   margin: 0 auto;

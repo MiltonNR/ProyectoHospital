@@ -1,5 +1,55 @@
+@use '_commons' as c;
+
+#carouselExampleCaptions {
+    background-color: map-get(c.$colores,"principal");
+    background-size: 100%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.foto {
+    width: 100%;
+    
+}
+
+.slogan {
+    position: absolute;
+    font-size: 10px;
+    bottom: 30px;
+    left: 10px;
+    color: #13a833;
+    background-color: white;
+    opacity: 0.8;
+    border: map-get(c.$colores,"principal");
+    border-style: solid;
+    border-width: 2px;
+       
+}
+
+@media only screen and (min-width: 768px) {
+    .slogan {
+        font-size: 20px;
+        bottom: 60px;
+        color: map-get(c.$colores,"principal");
+
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    .slogan {
+        bottom: 90px;
+    }
+    
+}
+
+
 #titulo_noticias {
-    background-color: $colorprincipal;
+    background-color: map-get(c.$colores,"principal");
     background-size: 100%;
 	display: flex;
     margin-top: 20px;
@@ -54,7 +104,7 @@
     text-decoration: none; 
     border-radius: 6px;
     color: white;   
-    background-color: $colorprincipal;
+    background-color: map-get(c.$colores,"principal");
     align-items: stretch;
     border-style: solid;
     border-width: 2px;
@@ -71,7 +121,7 @@
     border-color: whitesmoke;
     border-radius: 6px;
     color: white;   
-    background-color: $colorprincipal;
+    background-color: map-get(c.$colores,"principal");
     align-items: stretch;
     padding-top: 10px;
     height: 50%;
@@ -81,7 +131,7 @@
     text-decoration: none;   
     border-radius: 6px;
     color: white;   
-    background-color: $colorprincipal;
+    background-color: map-get(c.$colores,"principal");
     align-items: stretch;
     border-style: solid;
     border-width: 2px;
@@ -120,7 +170,7 @@
     text-decoration: none; 
     border-radius: 6px;
     color: white;   
-    background-color: $colorprincipal;
+    background-color: map-get(c.$colores,"principal");
     justify-content: space-around;
     align-items: stretch;
     border-style: solid;
@@ -135,7 +185,7 @@
     text-decoration: none; 
     border-radius: 6px;
     color: white;   
-    background-color: $colorprincipal;
+    background-color: map-get(c.$colores,"principal");
     justify-content: space-around;
     align-items: stretch;
     border-style: solid;
@@ -150,7 +200,7 @@
     text-decoration: none;   
     border-radius: 6px;
     color: white;   
-    background-color: $colorprincipal;
+    background-color: map-get(c.$colores,"principal");
     align-items: stretch;
     border-style: solid;
     border-width: 2px;
@@ -181,7 +231,7 @@
         text-decoration: none;   
         border-radius: 6px;
         color: white;   
-        background-color: $colorprincipal;
+        background-color: map-get(c.$colores,"principal");
         align-items: stretch;
         border-style: solid;
         border-width: 2px;
@@ -196,7 +246,7 @@
         text-decoration: none;   
         border-radius: 6px;
         color: white;   
-        background-color: $colorprincipal;
+        background-color: map-get(c.$colores,"principal");
         align-items: stretch;
         border-style: solid;
         border-width: 2px;
@@ -211,7 +261,7 @@
         text-decoration: none;   
         border-radius: 6px;
         color: white;   
-        background-color: $colorprincipal;
+        background-color: map-get(c.$colores,"principal");
         align-items: stretch;
         border-style: solid;
         border-width: 2px;
