@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-header {
+.header_logo {
   background-color: #13A883;
   background-size: 100%;
   display: flex;
@@ -17,7 +17,7 @@ header {
   border-radius: 6px;
 }
 
-header .logo {
+.header_logo .logo {
   width: 50px;
   height: 50px;
   border-right: #13A883;
@@ -25,14 +25,14 @@ header .logo {
   font-style: none;
 }
 
-header .titular {
+.header_logo .titular {
   color: white;
   font-size: 30px;
   text-decoration: none;
   display: none;
 }
 
-header .logohospital {
+.header_logo .logohospital {
   width: 75px;
   height: 50px;
   border-right: #13A883;
@@ -41,30 +41,30 @@ header .logohospital {
 }
 
 @media only screen and (min-width: 768px) {
-  header {
+  .header_logo {
     height: 10vh;
   }
-  header .titular {
+  .header_logo .titular {
     font-size: 15px;
     display: block;
   }
 }
 @media only screen and (min-width: 1024px) {
-  header {
+  .header_logo {
     height: 20vh;
     max-height: 300px;
   }
-  header .logo {
+  .header_logo .logo {
     width: 100px;
     height: 100px;
     border-right: #13A883;
     background-color: #13A883;
     font-style: none;
   }
-  header .titular {
+  .header_logo .titular {
     font-size: 30px;
   }
-  header .logohospital {
+  .header_logo .logohospital {
     width: 150px;
     height: 100px;
   }
@@ -222,7 +222,7 @@ footer ul li a {
   }
 }
 #titulo_noticias {
-  background-color: #13A883;
+  background: linear-gradient(90deg, #89d3c1, #13A883 35%, #89d3c1 80%);
   background-size: 100%;
   display: flex;
   margin-top: 20px;
@@ -236,6 +236,7 @@ footer ul li a {
   border-radius: 6px;
   font-size: large;
   padding-top: 15px;
+  border-color: #13A883;
 }
 
 @media only screen and (min-width: 768px) {
@@ -320,8 +321,8 @@ footer ul li a {
 
 .preview_index {
   text-align: justify;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 3px;
   font-size: small;
 }
@@ -379,8 +380,8 @@ footer ul li a {
   }
   .preview_index {
     padding-top: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 5px;
     font-size: 15px;
   }
@@ -433,8 +434,8 @@ footer ul li a {
   }
   .preview_index {
     padding-top: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 5px;
     font-size: 20px;
   }

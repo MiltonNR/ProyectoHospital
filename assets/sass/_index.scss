@@ -49,7 +49,7 @@
 
 
 #titulo_noticias {
-    background-color: map-get(c.$colores,"principal");
+    background: linear-gradient(90deg, map-get(c.$colores,"secundario"), map-get(c.$colores,"principal")35%,map-get(c.$colores,"secundario")80%);
     background-size: 100%;
 	display: flex;
     margin-top: 20px;
@@ -63,6 +63,8 @@
     border-radius: 6px;
     font-size: large;
     padding-top: 15px;
+    border-color: map-get(c.$colores,"principal");
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -150,8 +152,8 @@
 
 .preview_index {
     text-align: justify;  
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 3px;
     font-size:small;
 }
@@ -217,8 +219,8 @@
 
 .preview_index {
     padding-top: 20px;  
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 5px;
     font-size: 15px;
 }
@@ -279,8 +281,8 @@
     
     .preview_index {
         padding-top: 25px;  
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 5px;
         font-size: 20px;
         
