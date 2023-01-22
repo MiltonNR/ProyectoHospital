@@ -14,102 +14,105 @@
 <body>
 
     <header>
-        <h1><img class="logohospital" src="../assets/img/head/SMGH_Colour_with_Clear_Background.png" alt="St. Mary Hospital - Un lugar para tratamientos intensivos"></h1>
-        <p><a href="../index.html" class="titular">St. Mary Hospital - Un lugar para tratamientos intensivos</a></p>
-        <img class="logo" src="../assets/img/head/Logo.png" alt="Logo Theme Hospital">
+        <section class="header_logo">
+          <h1><img class="logohospital" src="../assets/img/head/SMGH_Colour_with_Clear_Background.png" alt="St. Mary Hospital - Un lugar para tratamientos intensivos"></h1>
+          <p><a href="../index.html" class="titular">St. Mary Hospital - Un lugar para tratamientos intensivos</a></p>
+          <img class="logo" src="../assets/img/head/Logo.png" alt="Logo Theme Hospital">
+        </section>
+        
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand barra_botones">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="./turnos.html" class="nav-link active" aria-current="page">Turnos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Empleados
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../assets/empleados/doctores.html">Doctores</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/empleados/enfermeras.html">Enfermeras</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/empleados/mantenimiento.html">Mantenimiento</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/empleados/recepcion.html">Recepción</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tratamientos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../assets/tratamientos/clinicos.html">Clinicos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/farmaceuticos.html">Farmacéuticos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/psiquiatricos.html">Psiquiátricos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/quirurgicos.html">Quirúrgicos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="./instalaciones.html" class="nav-link active" aria-current="page">Instalaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./noticias.html" class="nav-link active" aria-current="page">Noticias</a>
+                </li>  
+                <li class="nav-item">
+                  <a href="./shop.html" class="nav-link active" aria-current="page">Shop</a>
+                </li>                
+  
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
     </header>
  
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="../index.html" class="navbar-brand barra_botones">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="./turnos.html" class="nav-link active" aria-current="page">Turnos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Empleados
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../assets/empleados/doctores.html">Doctores</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/empleados/enfermeras.html">Enfermeras</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/empleados/mantenimiento.html">Mantenimiento</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/empleados/recepcion.html">Recepción</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tratamientos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../assets/tratamientos/clinicos.html">Clinicos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/tratamientos/farmaceuticos.html">Farmacéuticos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/tratamientos/psiquiatricos.html">Psiquiátricos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/tratamientos/quirurgicos.html">Quirúrgicos</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="./instalaciones.html" class="nav-link active" aria-current="page">Instalaciones</a>
-              </li>
-              <li class="nav-item">
-                <a href="./noticias.html" class="nav-link active" aria-current="page">Noticias</a>
-              </li>  
-              <li class="nav-item">
-                <a href="./shop.html" class="nav-link active" aria-current="page">Shop</a>
-              </li>                
-
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
     <section id="container_noticias">
         <div class="bloque_noticias">
             <div class="noticia_1">
                 <article>
-                    <h2><a href="../assets/noticias/noticia 1.html"  class="titulo_n">¡Que no se te suban los problemas a la cabeza!</a></h2>
+                    <h2><a href="../assets/noticias/noticia1.html"  class="titulo_n">¡Que no se te suban los problemas a la cabeza!</a></h2>
                     <p class="bajada_n">Sentis que tu cabeza esta por explotar? Es probable que sea correcto. Tenemos el tratamiento indicado para que esto deje de ser un problema.</p>
                     <figure><img class="img_n" src="../assets/noticias/img_noticias/bloatyhead.png"></figure>
                 </article>
             </div>
             <div class="noticia_2">
                 <article>
-                    <h3><a href="../assets/noticias/noticia 2.html"  class="titulo_n">¿Te sientes como Elvis? </a></h3>
+                    <h3><a href="../assets/noticias/noticia2.html"  class="titulo_n">¿Te sientes como Elvis? </a></h3>
                     <p class="bajada_n">Por que si Elvis esta vivo, le aseguro que no es usted, señor.</p>
                     <figure><img  class="img_n" src="../assets/noticias/img_noticias/elvis.png"></figure>
                 </article>
             </div>
             <div class="noticia_3">
                 <article>
-                    <h4><a href="../assets/noticias/noticia 3.html" class="titulo_n">Basta de problemas de Chimentos</a></h4>
+                    <h4><a href="../assets/noticias/noticia3.html" class="titulo_n">Basta de problemas de Chimentos</a></h4>
                     <p class="bajada_n">No nos interesa saber que le paso a la hija de una amiga de su sobrina</p>
                     <figure><img class="img_n" src="../assets/noticias/img_noticias/slacktongue.png"></figure>
                 </article>
             </div>
             <div class="noticia_4">
                 <article>
-                    <h5><a class="titulo_n" href="../assets/noticias/noticia 4.html">¿Más pelos que la media?</a></h5>
+                    <h5><a class="titulo_n" href="../assets/noticias/noticia4.html">¿Más pelos que la media?</a></h5>
                     <p class="bajada_n">Pie Grande y el Yeti no existen, si se ve parecidos a ellos, venga a nuestro hospital</p>
                     <figure><img class="img_n" src="../assets/noticias/img_noticias/Hairyitis.png"></figure>
                 </article>
             </div>
             <div class="noticia_5">
                 <article>
-                    <h6><a href="../assets/noticias/noticia 5.html" class="titulo_n">No deje de visitar nuestra farmacia</a></h6>
+                    <h6><a href="../assets/noticias/noticia5.html" class="titulo_n">No deje de visitar nuestra farmacia</a></h6>
                     <p class="bajada_n">Encontrá una innumerable cantidad de soluciones a sus problemas.</p>
                     <figure><img class="img_n" src="../assets/noticias/img_noticias/pharmacy.png"></figure>
                 </article>

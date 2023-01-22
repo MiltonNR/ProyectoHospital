@@ -12,7 +12,7 @@ $colores:(
     secundario: #89d3c1,   
 );
 
-header {
+.header_logo {
     background-color: map-get($colores,"principal");
     background-size: 100%;
     display: flex;
@@ -25,7 +25,7 @@ header {
     border-radius: 6px;
 }
 
-header .logo {
+.header_logo .logo {
     width: 50px;
     height: 50px;
     border-right: map-get($colores,"principal");
@@ -35,14 +35,14 @@ header .logo {
 }
 
 
-header .titular {
+.header_logo .titular {
     color: white;
     font-size: 30px;
     text-decoration: none;
     display: none;
 }
 
-header .logohospital {
+.header_logo .logohospital {
     width: 75px;
     height: 50px;
     border-right: map-get($colores,"principal");
@@ -53,12 +53,12 @@ header .logohospital {
 }
 
 @media only screen and (min-width: 768px) {
-    header {
+    .header_logo {
         height: 10vh;
     }
     
    
-    header .titular {
+    .header_logo .titular {
         font-size: 15px;
         display: block;
     }
@@ -68,12 +68,12 @@ header .logohospital {
 }
 
 @media only screen and (min-width: 1024px) {
-    header {
+    .header_logo {
         height: 20vh;
         max-height: 300px;
     }
     
-    header .logo {
+    .header_logo .logo {
         width: 100px;
         height: 100px;
         border-right: map-get($colores,"principal");
@@ -83,11 +83,11 @@ header .logohospital {
             
     }
     
-    header .titular {
+    .header_logo .titular {
         font-size: 30px;
     }
     
-    header .logohospital {
+    .header_logo .logohospital {
         width: 150px;
         height: 100px;
    

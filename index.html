@@ -16,70 +16,72 @@
 <body>
 
     <header>
-        <h1><img class="logohospital animate__heartBeat" src=assets/img/head/SMGH_Colour_with_Clear_Background.png alt="St. Mary Hospital - Un lugar para tratamientos intensivos"></h1>
-        <p><a href="index.html" class="titular">St. Mary Hospital - Un lugar para tratamientos intensivos</a></p>
-        <img class="logo animate__heartBeat" src=assets/img/head/Logo.png alt="Logo Theme Hospital">
+        
+        <section class="header_logo">
+          <h1><img class="logohospital animate__heartBeat" src=assets/img/head/SMGH_Colour_with_Clear_Background.png alt="St. Mary Hospital - Un lugar para tratamientos intensivos"></h1>
+          <p><a href="index.html" class="titular">St. Mary Hospital - Un lugar para tratamientos intensivos</a></p>
+          <img class="logo animate__heartBeat" src=assets/img/head/Logo.png alt="Logo Theme Hospital">
+        </section>
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a href="index.html" class="navbar-brand barra_botones">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="page/turnos.html" class="nav-link active" aria-current="page">Turnos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="assets/empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Empleados
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="assets/empleados/doctores.html">Doctores</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="assets/empleados/enfermeras.html">Enfermeras</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="assets/empleados/mantenimiento.html">Mantenimiento</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="assets/empleados/recepcion.html">Recepción</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="page/tratamientos.html" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tratamientos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="assets/tratamientos/clinicos.html">Clinicos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="assets/tratamientos/farmaceuticos.html">Farmacéuticos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="assets/tratamientos/psiquiatricos.html">Psiquiátricos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="assets/tratamientos/quirurgicos.html">Quirúrgicos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="page/instalaciones.html" class="nav-link active" aria-current="page">Instalaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a href="page/noticias.html" class="nav-link active" aria-current="page">Noticias</a>
+                </li>  
+                <li class="nav-item">
+                  <a href="page/shop.html" class="nav-link active" aria-current="page">Shop</a>
+                </li>                
+  
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
     </header>
  
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="index.html" class="navbar-brand barra_botones">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="page/turnos.html" class="nav-link active" aria-current="page">Turnos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="assets/empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Empleados
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="assets/empleados/doctores.html">Doctores</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="assets/empleados/enfermeras.html">Enfermeras</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="assets/empleados/mantenimiento.html">Mantenimiento</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="assets/empleados/recepcion.html">Recepción</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="page/tratamientos.html" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tratamientos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="assets/tratamientos/clinicos.html">Clinicos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="assets/tratamientos/farmaceuticos.html">Farmacéuticos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="assets/tratamientos/psiquiatricos.html">Psiquiátricos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="assets/tratamientos/quirurgicos.html">Quirúrgicos</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="page/instalaciones.html" class="nav-link active" aria-current="page">Instalaciones</a>
-              </li>
-              <li class="nav-item">
-                <a href="page/noticias.html" class="nav-link active" aria-current="page">Noticias</a>
-              </li>  
-              <li class="nav-item">
-                <a href="page/shop.html" class="nav-link active" aria-current="page">Shop</a>
-              </li>                
-
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-    </nav>
-
-
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -121,7 +123,7 @@
 
 
     <section id="titulo_noticias">
-      <p><a href="page/noticias.html">Noticias en Medicina Moderna</a></p>
+      <p><a href="page/noticias.html" class="titulo_noticias">Noticias en Medicina Moderna</a></p>
     </section>
 
 
@@ -129,24 +131,24 @@
         <div class="bloque_preview">
             <div class="noticia_index_1">
                 <article>
-                    <p><a href="./assets/noticias/noticia 1.html" class="titulo_preview"> Tratamiento para enfermedad</a></p2>
-                    <p class="preview_index">¿Siempre cree que tiene razón? Bueno, está equivocado. No la tiene siempre. ¿Se cree demasiado famoso? Bueno, no lo es. No deje que todo se le suba a la cabeza. Descubrimos esta nueva enfermedad en la que todo se sube a la cabeza y se hincha sin saber dónde frenar. La principal causa de esta enfermedad Oler queso y beber agua de lluvia sin purificar y es Muy incómodo para el que lo sufre. Sobre todo, para los que lo rodean o conviven con él en espacios cerrados. El tratamiento es muy simple, La cabeza hinchada se revienta y luego se vuelve a inflar al PSI correcto usando una máquina inteligente manejada por un doctor altamente calificado. Pare de sufrir y visítenos para...(Continuar Leyendo)
+                    <p><a href="./assets/noticias/noticia1.html" class="titulo_preview"> Tratamiento para enfermedad</a></p2>
+                    <p class="preview_index">¿Siempre cree que tiene razón? Bueno, está equivocado. No la tiene siempre. ¿Se cree demasiado famoso? Bueno, no lo es. No deje que todo se le suba a la cabeza. Descubrimos esta nueva enfermedad en la que todo se sube a la cabeza y se hincha sin saber dónde frenar. La principal causa de esta enfermedad Oler queso y beber agua de lluvia sin purificar y es Muy incómodo para el que lo sufre. Sobre todo, para los que lo rodean o conviven con él en espacios cerrados. El tratamiento es muy simple, La cabeza hinchada se revienta y luego se vuelve a inflar al PSI correcto usando una máquina inteligente manejada por un doctor altamente calificado. Pare de sufrir y visítenos para <a href="./assets/noticias/noticia1.html" class="continuar_leyendo">...(Continuar Leyendo)</a>
                     </p>
                 </article>
             </div>
             <div class="noticia_index_2">
                 <article>
-                    <h3><a href="./assets/noticias/noticia 2.html" class="titulo_preview">¿Te sientes como Elvis? </a>
+                    <h3><a href="./assets/noticias/noticia2.html" class="titulo_preview">¿Te sientes como Elvis? </a>
                     </h3>
-                    <p class="preview_index">Está claro que la búsqueda de fama, dinero y reconocimiento es inmensa e imparable. La constante exposición al consumo que genera la radio, la televisión y la computadora nos quiere hacer tener más. más y MÁS. Claro, no todos podemos acceder a esto y así buscamos un refugio inmediato con las estrellas que nos rodean en nuestro día a día. La polémica sobre si el Rey esta con vida o no, siempre dio vueltas entre la gente, por eso, muchos de los que buscan todo lo nombrado anteriormente, se refugian en su figura para intentar llegar a ese punto. De un momento a otro, El espíritu del Rey entra en la mente del paciente y se hace cargo La cura parece ser Ponerse calzado de g....(Continuar Leyendo)
+                    <p class="preview_index">Está claro que la búsqueda de fama, dinero y reconocimiento es inmensa e imparable. La constante exposición al consumo que genera la radio, la televisión y la computadora nos quiere hacer tener más. más y MÁS. Claro, no todos podemos acceder a esto y así buscamos un refugio inmediato con las estrellas que nos rodean en nuestro día a día. La polémica sobre si el Rey esta con vida o no, siempre dio vueltas entre la gente, por eso, muchos de los que buscan todo lo nombrado anteriormente, se refugian en su figura para intentar llegar a ese punto. De un momento a otro, El espíritu del Rey entra en la mente del paciente y se hace cargo La cura parece ser Ponerse calzado de g<a href="./assets/noticias/noticia2.html" class="continuar_leyendo">...(Continuar Leyendo)</a>
                     </p>
                 </article>
             </div>
             <div class="noticia_index_3">
                 <article>
-                    <h4><a href="./assets/noticias/noticia 3.html" class="titulo_preview">Basta de problemas de
+                    <h4><a href="./assets/noticias/noticia3.html" class="titulo_preview">Basta de problemas de
                             Chimentos</a></h4>
-                    <p class="preview_index">No, no es interesante. No, no queremos saber quien quedó embarazada. Tampoco nos interesa saber quien traicionó a quien en el trabajo. Mucho menos queremos saber intimidades de sus cuñados. Algunas veces es mejor quedarse callado y ya. Guarde su gigantesca lengua y cortela de cuajo. No le hechamos la culpa al paciente, sabemos que una vez que se empieza a desenrrollar, puede ser imparable. Sabemos que fisicamente puede medir hasta 10 cm, pero en algunos casos puede ser imparable su crecimiento. Muchas veces la Sobrediscusión crónica de telenovelas (y sus variables como TalksShows, Reality Shows o leer mucho sobre Shakira y Piqué) puede causar que la lengua se hinché has...(Continuar Leyendo)
+                    <p class="preview_index">No, no es interesante. No, no queremos saber quien quedó embarazada. Tampoco nos interesa saber quien traicionó a quien en el trabajo. Mucho menos queremos saber intimidades de sus cuñados. Algunas veces es mejor quedarse callado y ya. Guarde su gigantesca lengua y cortela de cuajo. No le hechamos la culpa al paciente, sabemos que una vez que se empieza a desenrrollar, puede ser imparable. Sabemos que fisicamente puede medir hasta 10 cm, pero en algunos casos puede ser imparable su crecimiento. Muchas veces la Sobrediscusión crónica de telenovelas (y sus variables como TalksShows, Reality Shows o leer mucho sobre Shakira y Piqué) puede causar que la lengua se hinché has<a href="./assets/noticias/noticia3.html" class="continuar_leyendo">...(Continuar Leyendo)</a>
                     </p>
                 </article>
             </div>

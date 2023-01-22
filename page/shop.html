@@ -15,69 +15,71 @@
 <body>
 
     <header>
-        <h1><img class="logohospital" src="../assets/img/head/SMGH_Colour_with_Clear_Background.png" alt="St. Mary Hospital - Un lugar para tratamientos intensivos"></h1>
-        <p><a href="../index.html" class="titular">St. Mary Hospital - Un lugar para tratamientos intensivos</a></p>
-        <img class="logo" src="../assets/img/head/Logo.png" alt="Logo Theme Hospital">
+        <section class="header_logo">
+          <h1><img class="logohospital" src="../assets/img/head/SMGH_Colour_with_Clear_Background.png" alt="St. Mary Hospital - Un lugar para tratamientos intensivos"></h1>
+          <p><a href="../index.html" class="titular">St. Mary Hospital - Un lugar para tratamientos intensivos</a></p>
+          <img class="logo" src="../assets/img/head/Logo.png" alt="Logo Theme Hospital">
+        </section>
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand barra_botones">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="./turnos.html" class="nav-link active" aria-current="page">Turnos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Empleados
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../assets/empleados/doctores.html">Doctores</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/empleados/enfermeras.html">Enfermeras</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/empleados/mantenimiento.html">Mantenimiento</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/empleados/recepcion.html">Recepción</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tratamientos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../assets/tratamientos/clinicos.html">Clinicos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/farmaceuticos.html">Farmacéuticos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/psiquiatricos.html">Psiquiátricos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/quirurgicos.html">Quirúrgicos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="./instalaciones.html" class="nav-link active" aria-current="page">Instalaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./noticias.html" class="nav-link active" aria-current="page">Noticias</a>
+                </li>  
+                <li class="nav-item">
+                  <a href="./shop.html" class="nav-link active" aria-current="page">Shop</a>
+                </li>                
+  
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
     </header>
  
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a href="../index.html" class="navbar-brand barra_botones">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="./turnos.html" class="nav-link active" aria-current="page">Turnos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Empleados
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../assets/empleados/doctores.html">Doctores</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/empleados/enfermeras.html">Enfermeras</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/empleados/mantenimiento.html">Mantenimiento</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/empleados/recepcion.html">Recepción</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tratamientos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../assets/tratamientos/clinicos.html">Clinicos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/tratamientos/farmaceuticos.html">Farmacéuticos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/tratamientos/psiquiatricos.html">Psiquiátricos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="../assets/tratamientos/quirurgicos.html">Quirúrgicos</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="./instalaciones.html" class="nav-link active" aria-current="page">Instalaciones</a>
-              </li>
-              <li class="nav-item">
-                <a href="./noticias.html" class="nav-link active" aria-current="page">Noticias</a>
-              </li>  
-              <li class="nav-item">
-                <a href="./shop.html" class="nav-link active" aria-current="page">Shop</a>
-              </li>                
-
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
     <main id="shop">
       <div class="shop_productos">
 
