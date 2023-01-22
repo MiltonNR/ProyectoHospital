@@ -5,7 +5,7 @@
 #shop {
     display: flex;
 	align-items: flex-start;
-    background-color: map-get(c.$colores,"principal");
+    background-color: map-get(c.$colores,"secundario");
     background-size: 100%;
     margin-left: 20px;
     margin-right: 20px;
@@ -44,12 +44,12 @@
     flex-direction: row;
     justify-content: space-between;
     width: 85%;
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 
 .productos_shop_titular h3{
-    font-size: 20px;
+    font-size: 100%;
     font-weight: bold;
 }
 
@@ -96,7 +96,7 @@
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         border-radius: 6px;
-        background-color:map-get(c.$colores,"principal");
+        background-color:map-get(c.$colores,"secundario");
    
     }
 
@@ -110,7 +110,7 @@
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         border-radius: 6px;
-        background-color:map-get(c.$colores,"principal");
+        background-color:map-get(c.$colores,"secundario");
    
     }
 
