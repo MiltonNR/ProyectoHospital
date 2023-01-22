@@ -239,6 +239,11 @@ footer ul li a {
   border-color: #13A883;
 }
 
+.continuar_leyendo {
+  text-decoration: none;
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
   #titulo_noticias {
     font-size: x-large;
