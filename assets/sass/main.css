@@ -155,11 +155,17 @@ footer {
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 footer ul {
-  -webkit-padding-start: 5px;
-          padding-inline-start: 5px;
+  -webkit-padding-start: 7px;
+          padding-inline-start: 7px;
 }
 
 footer ul li {
@@ -173,12 +179,34 @@ footer ul li a {
   font-size: small;
 }
 
+.redes_logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.redes {
+  width: 4%;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .redes {
+    width: 2%;
+    margin-bottom: 5px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   footer ul li {
     font-size: 15px;
   }
   footer ul li a {
     font-size: 15px;
+  }
+  .redes {
+    width: 1%;
+    margin-bottom: 5px;
   }
 }
 #carouselExampleCaptions {
