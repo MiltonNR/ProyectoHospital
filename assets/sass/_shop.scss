@@ -15,6 +15,33 @@
     justify-content: center;
 }
 
+.botones {
+    margin-top: 30px;
+    align-self: flex-end;
+}
+
+.segundabarra {
+    display: none;
+    background-color: whitesmoke;
+
+    &.mostrar{
+        display: block;
+    }
+}
+
+.saludonavbar {
+    color: black;
+    text-decoration: none;
+    font-size: xx-large;
+    align-self: flex-end;
+
+    &:hover {
+        color: black;
+        text-decoration: none;
+    }
+    
+}
+
 .productos_shop {
     display: flex;
     flex-direction: column;
@@ -35,6 +62,7 @@
 
 .productos_shop_img{
     width: 45%;
+    height: 50%;
     border-style: solid;
     border-width: 1px;
 }
@@ -54,11 +82,88 @@
 }
 
 
-
 .productos_shop_descripcion{
     width: 85%;
     font-size: 14px;
 }
+
+.btningresar {
+    margin-left: 10px;
+    padding: 15px;
+    background-color:map-get(c.$colores,"principal");
+    border-radius: 6px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    align-self:flex-end ;
+    margin-right: 10px;
+
+    &:hover {
+        background-color:white;
+        border-radius: 6px;
+        text-decoration: none;
+        border-style: solid;
+        border-width: 2px;
+        border-color:map-get(c.$colores,"principal");
+        color:map-get(c.$colores,"principal");
+    }
+    
+}
+
+.btnregistro {
+    margin-left: 10px;
+    padding: 15px;
+    background-color:map-get(c.$colores,"principal");
+    border-radius: 6px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    align-self:flex-end ;
+    margin-right: 10px;
+
+    &:hover {
+        background-color:white;
+        border-radius: 6px;
+        text-decoration: none;
+        border-style: solid;
+        border-width: 2px;
+        border-color:map-get(c.$colores,"principal");
+        color:map-get(c.$colores,"principal");
+    }
+    
+}
+
+.cantidadshop {
+    margin-top: 20px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    align-self: flex-end;
+
+    margin-right: 10px;
+
+}
+
+.cantidad {
+    margin-right: 10px;
+}
+
+.cantidadinput {
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: black;
+    align-self:flex-end ;
+    width: 45px;
+}
+
 
 .btn-shop{
     margin-top: 20px;

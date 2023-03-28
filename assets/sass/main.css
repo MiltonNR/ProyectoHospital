@@ -1580,6 +1580,30 @@ tr:hover td {
   justify-content: center;
 }
 
+.botones {
+  margin-top: 30px;
+  align-self: flex-end;
+}
+
+.segundabarra {
+  display: none;
+  background-color: whitesmoke;
+}
+.segundabarra.mostrar {
+  display: block;
+}
+
+.saludonavbar {
+  color: black;
+  text-decoration: none;
+  font-size: xx-large;
+  align-self: flex-end;
+}
+.saludonavbar:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .productos_shop {
   display: flex;
   flex-direction: column;
@@ -1599,6 +1623,7 @@ tr:hover td {
 
 .productos_shop_img {
   width: 45%;
+  height: 50%;
   border-style: solid;
   border-width: 1px;
 }
@@ -1619,6 +1644,77 @@ tr:hover td {
 .productos_shop_descripcion {
   width: 85%;
   font-size: 14px;
+}
+
+.btningresar {
+  margin-left: 10px;
+  padding: 15px;
+  background-color: #13A883;
+  border-radius: 6px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+.btningresar:hover {
+  background-color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #13A883;
+  color: #13A883;
+}
+
+.btnregistro {
+  margin-left: 10px;
+  padding: 15px;
+  background-color: #13A883;
+  border-radius: 6px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+.btnregistro:hover {
+  background-color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #13A883;
+  color: #13A883;
+}
+
+.cantidadshop {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.cantidad {
+  margin-right: 10px;
+}
+
+.cantidadinput {
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  color: black;
+  align-self: flex-end;
+  width: 45px;
 }
 
 .btn-shop {
