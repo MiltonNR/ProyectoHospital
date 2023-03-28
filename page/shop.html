@@ -10,7 +10,9 @@
     <link rel="icon" href="../assets/img/head/Logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/sass/main.css">
-    <script defer src="../assets/shop/shop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="../assets/js/controlDeSesion.js"></script>
+    <script defer src="../assets/js/carrito.js"></script>
 </head>
 
 <body>
@@ -79,6 +81,46 @@
             </div>
           </div>
         </nav>
+
+        <!-- Barra de Sesion -->
+        <nav id="barra-sesion" class="navbar navbar-expand-lg segundabarra">
+          <div class="collapse navbar-collapse segundabarra" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item registro">
+                <a class="saludonavbar">Bienvenido! Para empezar a comprar haga click aquí: </a>
+              </li>
+              <li class="nav-item registro">
+                <button class="btningresar" id="btnIngresar" aria-current="page">Ingresar</button>
+              </li>
+              <li class="nav-item">
+                <button class="btnregistro" id="btnRegistro" aria-current="page">Registro</button>
+              </li>
+              <li class="nav-item dropdown">              
+          </div>
+        </nav>
+
+         <!-- Barra de Carrito -->
+         <nav id="barra-carrito" class="navbar navbar-expand-lg segundabarra">
+          <div class="collapse navbar-collapse segundabarra" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item registro">
+                <a class="saludonavbar">Bienvenid@ <span id="nombre-usuario"></span>!!!!! <!--Tu saldo actual es $<span id="saldo-usuario"></span>--></a>
+              </li>
+              <li class="nav-item registro">
+                <button class="btningresar" id="btnConfirmar" aria-current="page">Confirmar Compra</button>
+              </li>
+              <li class="nav-item verCarrito">
+                <button class="btningresar" id="verCarrito" aria-current="page">Ver Carrito</button>
+              </li>
+              <li class="nav-item">
+                <button class="btnregistro" id="btnModificarDatos" aria-current="page">Modificar Datos</button>
+              </li>
+              <li class="nav-item">
+                <button class="btnregistro" id="btnDesloguearse" aria-current="page">Desloguearse</button>
+              </li>
+              <li class="nav-item dropdown">              
+          </div>
+        </nav>
     </header>
  
     <main id="shop">
@@ -95,7 +137,14 @@
 
             <div class="productos_shop_descripcion">¿La espera lo dejó moviendo la cabeza? ¿Sigue pensando en ese solo de guitarra? ¡Ahora puede volver a cada disfrutando el sonido que lo dejó sano! 
             </div>
-            <a href="#" class="btn-shop">Añadir al Carrito</a>
+            <form class= "cantidadshop">
+              <label class="cantidad" for="numero">Cantidad:</label>
+              <input id="cantidadMusica" class="cantidadinput" type="number"  name="numero" min="0" value="0">
+            </form>
+            <div class="botones">
+            <a id="aniadirMusica" class="btn-shop">Añadir al Carrito</a>
+            <a id="quitarMusica" class="btn-shop">Quitar del Carrito</a>
+            </div>
         </div>
 
         <div class="productos_shop">
@@ -109,7 +158,14 @@
   
               <div class="productos_shop_descripcion">¿Tiene su calendario de vacunación al día? ¿Y sus hijos? ¿Y sus perros? Vengan que hay vacunas para todos. Alguien será vacunado.
               </div>
-              <a href="#" class="btn-shop">Añadir al Carrito</a>
+              <form class= "cantidadshop">
+                <label class="cantidad" for="numero">Cantidad:</label>
+                <input id="cantidadVacunas" class="cantidadinput" type="number"  name="numero" min="0" value="0">
+              </form>
+            <div class="botones">
+            <a id="aniadirVacunas" class="btn-shop">Añadir al Carrito</a>
+            <a id="quitarVacunas" class="btn-shop">Quitar del Carrito</a>
+            </div>
         </div>
 
         <div class="productos_shop">
@@ -122,7 +178,14 @@
           </div>
 
           <div class="productos_shop_descripcion">Sí, tenemos un pool y esta a la venta. La tele va de regalo (Ya nos compramos un 4k)</div>
-          <a href="#" class="btn-shop">Añadir al Carrito</a>
+          <form class= "cantidadshop">
+            <label class="cantidad" for="numero">Cantidad:</label>
+            <input id="cantidadPool" class="cantidadinput" type="number"  name="numero" min="0" value="0">
+          </form>           
+          <div class="botones">
+            <a id="aniadirPool" class="btn-shop">Añadir al Carrito</a>
+            <a id="quitarPool" class="btn-shop">Quitar del Carrito</a>
+          </div>
         </div>
 
         <div class="productos_shop">
@@ -134,8 +197,15 @@
                 <h3>$1.50</h3>
             </div>
 
-            <div class="productos_shop_descripcion">Y sí, es totalmente logico que un hospital venda chips no recomendado para diabeticos, niños y enfermos en general. Bueno... tampoco deberían consumirlos los sanos.</div>
-            <a href="#" class="btn-shop">Añadir al Carrito</a>
+            <div class="productos_shop_descripcion">Y sí, es totalmente logico que un hospital venda chips no recomendado para diabeticos, niños y demás. Bueno... tampoco deberían consumirlos los sanos.</div>
+            <form class= "cantidadshop">
+              <label class="cantidad" for="numero">Cantidad:</label>
+              <input id="cantidadKk" class="cantidadinput" type="number"  name="numero" min="0" value="0">
+            </form>
+            <div class="botones">
+              <a id="aniadirKk" class="btn-shop">Añadir al Carrito</a>
+              <a id="quitarKk" class="btn-shop">Quitar del Carrito</a>
+            </div>
         </div>
 
         <div class="productos_shop">
@@ -148,7 +218,14 @@
           </div>
 
           <div class="productos_shop_descripcion">Moderna Maquina de comunicación. Imagine que tiene que mandar una imagen. ¿Cómo lo resuelve? ¡Correcto! Por fax</div>
-          <a href="#" class="btn-shop">Añadir al Carrito</a>
+          <form class= "cantidadshop">
+            <label class="cantidad" for="numero">Cantidad:</label>
+            <input id="cantidadFax" class="cantidadinput" type="number"  name="numero" min="0" value="0">
+          </form>
+          <div class="botones">
+            <a id="aniadirFax" class="btn-shop">Añadir al Carrito</a>
+            <a id="quitarFax" class="btn-shop">Quitar del Carrito</a>
+          </div>
         </div>
 
       <div class="productos_shop">
@@ -161,7 +238,14 @@
             </div>
 
             <div class="productos_shop_descripcion">Con nuestro cronometro oficial usted prodrá demostrarnos todo el tiempo que lo tuvimos en sala de espera</div>
-            <a href="#" class="btn-shop">Añadir al Carrito</a>
+            <form class= "cantidadshop">
+              <label class="cantidad" for="numero">Cantidad:</label>
+              <input id="cantidadCronometro" class="cantidadinput" type="number"  name="numero" min="0" value="0">
+            </form>
+            <div class="botones">
+              <a id="aniadirCronometro" class="btn-shop">Añadir al Carrito</a>
+              <a id="quitarCronometro" class="btn-shop">Quitar del Carrito</a>
+            </div>
       </div>
 
 
