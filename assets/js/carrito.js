@@ -2,6 +2,7 @@ let productos = []; //se declara la variable para despues parsearla desde el jso
 
 let saldo = 0;
 
+//Esta alerta es un booleano que se avisa que perdés el carrito al salir de la pagina. Es un booleano para que te avise sólo una vez. Una vez que intentaste salir, pasa a ser true y ya no aparece el cartel (ver funciones relativas:alertaCarritoOver/noPierdasElCarrito). Podría haber guardado el carrito pero que se yo, me gustó más esto. Y es mucho más molesto a la experiencia UI. 
 let alertaCarrito = false;
 
 //Se llama al json con un evento para que la asincronia no afecte a la carga de datos por eso el listener al cargar el dom
@@ -169,7 +170,7 @@ function verCarrito() {
 
   carrito.forEach(producto => {
     const item = document.createElement('li');
-    item.innerText = `${producto.nombre} - ${producto.unidadesPedidas} unidades`;
+    item.innerText = `${producto.nombre} - ${producto.unidadesPedidas} ${producto.unidadesPedidas === 1 ? 'unidad' : 'unidades'}`;
 
     lista.appendChild(item);
   })
@@ -182,7 +183,7 @@ function verCarrito() {
     )
   } else {
     Swal.fire({
-      title: `Tenes cargados estos productos en el carrito! Tu Saldo Actual es de ${saldo}`,
+      title: `El carrito tiene esto agregado! \n\nTu Saldo Actual es de $${saldo.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`,
       html: lista,
       focusConfirm: false,
       buttonsStyling: false
@@ -261,7 +262,7 @@ function funcionConfirmarCompra() {
 
       if (pago) {
         Swal.fire({
-          title: `Ha seleccionado: ${pago}. El importe a cancelar es de $${saldo} y se entregará en la dirección ingresada al momento del registro.`,
+          title: `Ha seleccionado: ${pago}. El importe a cancelar es de $${saldo.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} y se entregará en la dirección ingresada al momento del registro.`,
           showDenyButton: true,
           confirmButtonText: 'Confirmar Compra',
           denyButtonText: `Seguir Comprando`,
@@ -289,7 +290,7 @@ function funcionConfirmarCompra() {
 }
 
 function noPierdasElCarrito() {
-  if (!alertaCarrito) {
+  if (!alertaCarrito && saldo > 0) {
     Swal.fire({
       text: "Cuidado! Al cerrar la pagina vas a perder lo que tengas en el carrito si no confirmaste la compra!",
       buttonsStyling: false,
