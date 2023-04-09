@@ -20,23 +20,23 @@
     <header>
         <div class="header_logo">
           <h1><img class="logohospital" src="../assets/img/head/SMGH_Colour_with_Clear_Background.png" alt="St. Mary Hospital - Un lugar para tratamientos intensivos"></h1>
-          <p><a href="../index.html" class="titular alertaCarrito">St. Mary Hospital - Un lugar para tratamientos intensivos</a></p>
+          <p><a href="../index.html" class="titular">St. Mary Hospital - Un lugar para tratamientos intensivos</a></p>
           <img class="logo" src="../assets/img/head/Logo.png" alt="Logo Theme Hospital">
         </div>
 
-        <nav class="navbar navbar-expand-lg" id="navbarSalida">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a href="../index.html" class="navbar-brand barra_botones alertaCarrito">Home</a>
+            <a href="../index.html" class="navbar-brand barra_botones">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a href="./turnos.html" class="nav-link active alertaCarrito" aria-current="page">Turnos</a>
+                  <a href="./turnos.html" class="nav-link active" aria-current="page">Turnos</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="./empleados/" class="nav-link dropdown-toggle barra_botones alertaCarrito" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Empleados
                   </a>
                   <ul class="dropdown-menu">
@@ -50,24 +50,24 @@
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="./empleados/" class="nav-link dropdown-toggle barra_botones alertaCarrito" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="./empleados/" class="nav-link dropdown-toggle barra_botones" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Tratamientos
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item alertaCarrito" href="../assets/tratamientos/clinicos.html">Clinicos</a></li>
-                    <li><hr class="dropdown-divider alertaCarrito"></li>
-                    <li><a class="dropdown-item alertaCarrito" href="../assets/tratamientos/farmaceuticos.html">Farmacéuticos</a></li>
-                    <li><hr class="dropdown-divider alertaCarrito"></li>
-                    <li><a class="dropdown-item alertaCarrito" href="../assets/tratamientos/psiquiatricos.html">Psiquiátricos</a></li>
-                    <li><hr class="dropdown-divider alertaCarrito"></li>
-                    <li><a class="dropdown-item alertaCarrito" href="../assets/tratamientos/quirurgicos.html">Quirúrgicos</a></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/clinicos.html">Clinicos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/farmaceuticos.html">Farmacéuticos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/psiquiatricos.html">Psiquiátricos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../assets/tratamientos/quirurgicos.html">Quirúrgicos</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="./instalaciones.html" class="nav-link active alertaCarrito" aria-current="page">Instalaciones</a>
+                  <a href="./instalaciones.html" class="nav-link active" aria-current="page">Instalaciones</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./noticias.html" class="nav-link active alertaCarrito" aria-current="page">Noticias</a>
+                  <a href="./noticias.html" class="nav-link active" aria-current="page">Noticias</a>
                 </li>  
                 <li class="nav-item">
                   <a href="./shop.html" class="nav-link active" aria-current="page">Shop</a>
@@ -277,7 +277,7 @@
           <li>Calle Falsa 123, Provincia Inventada, País Imaginario</li>
           <li>Telefono: 923 132 1350</li>
           <li>Fundación 1952 - Dr. Roberto St. Mary Mat. 9876</li>
-          <li><a href="./contactus.html" class="continuar_leyendo alertaCarrito">Contactenos</a></li>
+          <li><a href="./contactus.html" class="continuar_leyendo">Contactenos</a></li>
        </ul>
        <ul class="redes_logos">     
         <img class="redes" src="../assets/footer/face.png">
@@ -291,5 +291,43 @@
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>

@@ -4,6 +4,46 @@
   padding: 0;
 }
 
+.swal2-confirm {
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: #13A883;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.swal2-actions {
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  margin: 1.25em auto;
+  gap: 1rem;
+}
+
+.swal2-cancel {
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: red;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.swal2-deny {
+  border: 0;
+  border-radius: 0.25em;
+  background: initial;
+  background-color: red;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px;
+}
+
 .header_logo {
   background-color: #13A883;
   background-size: 100%;
@@ -1722,7 +1762,7 @@ tr:hover td {
   padding: 10px;
   background-color: #13A883;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 10px;
   text-decoration: none;
   border-style: solid;
   border-width: 2px;
@@ -1736,11 +1776,58 @@ tr:hover td {
   padding: 10px;
   background-color: white;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 10px;
   text-decoration: none;
   border-style: solid;
   border-width: 2px;
   border-color: #13A883;
+  color: #13A883;
+}
+
+.menuOrdenar {
+  padding: 10px;
+  background-color: #13A883;
+  border-radius: 6px;
+  font-size: 10px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  color: white;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+.menuOrdenar:hover {
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  font-size: 10px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #13A883;
+  color: #13A883;
+}
+
+.menuOrdenarLetras {
+  color: white;
+}
+.menuOrdenarLetras:hover {
+  color: #13A883;
+}
+.menuOrdenarLetras:hover:active {
+  color: white;
+}
+.menuOrdenarLetras:hover:focus {
+  color: white;
+}
+.menuOrdenarLetras::after {
+  color: #13A883;
+}
+.menuOrdenarLetras:active {
+  color: #13A883;
+}
+.menuOrdenarLetras:focus {
   color: #13A883;
 }
 
@@ -1754,6 +1841,18 @@ tr:hover td {
     border-radius: 6px;
     background-color: #89d3c1;
   }
+  .btn-shop {
+    font-size: 14px;
+  }
+  .btn-shop:hover {
+    font-size: 14px;
+  }
+  .menuOrdenar {
+    font-size: 16px;
+  }
+  .menuOrdenar:hover {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 1048px) {
   .shop_productos {
@@ -1764,6 +1863,18 @@ tr:hover td {
     grid-row-gap: 20px;
     border-radius: 6px;
     background-color: #89d3c1;
+  }
+  .btn-shop {
+    font-size: 14px;
+  }
+  .btn-shop:hover {
+    font-size: 14px;
+  }
+  .menuOrdenar {
+    font-size: 14px;
+  }
+  .menuOrdenar:hover {
+    font-size: 14px;
   }
 }
 #formularios_contactus {
