@@ -31,6 +31,7 @@ function mostrarModalRegistro() {
       '<input id="input-direccion" class="swal2-input" placeholder="Ingrese su direccion">' +
       '<div>Recordarme <input type="checkbox" id="recordar" name="recordar" value="recordar"></div>',
     focusConfirm: false,
+    buttonsStyling: false,
     preConfirm: () => {
       // obtener los datos del formulario
       // acceder a lista de usuarios y chequear si existe uno con mismo username
@@ -54,10 +55,12 @@ function mostrarModalRegistro() {
 
         if (recordar) {
           localStorage.setItem('usuario', JSON.stringify(nuevoUsuario));
-          
+                    
         } else {
           sessionStorage.setItem('usuario', JSON.stringify(nuevoUsuario));
         }
+      
+      
       }
     }
   })
@@ -72,7 +75,10 @@ function registrarUsuario(usuario) {
 }
 
 function mostrarErrorDeRegristro() {
-  Swal.fire('Este usuario ya existe. \nVolvé a intentar el registro.')
+  Swal.fire({
+    text: 'Este usuario ya existe. \nVolvé a intentar el registro.',
+    buttonsStyling: false
+  });
 }
 
 
@@ -85,6 +91,7 @@ function mostrarModalIngreso() {
       '<input id="input-password" type="password" class="swal2-input" placeholder="Ingrese su contraseña">' +
       '<div>Recordarme <input type="checkbox" id="recordar" name="recordar" value="recordar"></div>',
     focusConfirm: false,
+    buttonsStyling: false,
     preConfirm: () => {
       const username = document.getElementById('input-username').value
       const password = document.getElementById('input-password').value
@@ -110,18 +117,24 @@ function mostrarModalIngreso() {
 }
 
 function mostrarErrorUsuarioInexistente() {
-  Swal.fire('Este usuario no existe. \nVolvé a ingresar el usuario correcto.')
+  Swal.fire(
+    {text: 'Este usuario no existe. \nVolvé a ingresar el usuario correcto.',
+    buttonsStyling: false
+    })
 }
 
 function mostrarErrorContraseniaIncorrecta() {
-  Swal.fire('La contraseña es incorrecta.')
+  Swal.fire({
+    text:'La contraseña es incorrecta.',
+    buttonsStyling: false
+  })
 }
 
 function desloguearUsuario() {
   localStorage.removeItem('usuario');
   alternarBarraSesion();
   alternarBarraCarrito();
-
+  location.reload()
 }
 
 function modificarDatos() {
@@ -136,6 +149,7 @@ function modificarDatos() {
         `<input id="input-password" type="password" class="swal2-input" value="${usuarioLogueado.password}">` +
         `<input id="input-direccion" class="swal2-input" value="${usuarioLogueado.direccion}">`,
       focusConfirm: false,
+      buttonsStyling: false,
       preConfirm: () => {
         const nuevosDatos = {
           nickname: document.getElementById('input-nickname').value,
@@ -161,56 +175,11 @@ function modificarDatos() {
         } else {
           sessionStorage.setItem('usuario', JSON.stringify(nuevoUsuario));
         }
+        location.reload()
+
       }
     });
   
-
-
-
-
-
-
-
-
-
-
-  /*const usuarioLogueado = JSON.parse(localStorage.getItem('usuario') || sessionStorage.getItem('usuario'))
-  const nuevoUsuario = JSON.parse(localStorage.getItem('usuario') || sessionStorage.getItem('usuario'))
-
-  Swal.fire({
-    title: 'Modificar',
-    html:
-      `<input id="input-nickname" class="swal2-input" value="${usuarioLogueado.nickname}">` +
-      `<input id="input-username" class="swal2-input" value="${usuarioLogueado.username}">` +
-      `<input id="input-password" type="password" class="swal2-input" value="${usuarioLogueado.password}">` +
-      `<input id="input-direccion" class="swal2-input" value="${usuarioLogueado.direccion}">`,
-    focusConfirm: false,
-    preConfirm: () => {
-      const nuevosDatos = {
-        nickname: document.getElementById('input-nickname').value,
-        username: document.getElementById('input-username').value,
-        password: document.getElementById('input-password').value,
-        direccion: document.getElementById('input-direccion').value,
-      }
-
-      usuarios.forEach(usuario => {
-        if (usuario.username === usuarioLogueado.username) {
-          return nuevosDatos
-        }
-        return usuario
-      });
-
-      localStorage.setItem('usuarios', JSON.stringify(usuarios));
-
-      const usuarioRecordado = localStorage.getItem('usuario') // null o string
-
-      if (usuarioRecordado) {
-        localStorage.setItem('usuario', JSON.stringify(nuevoUsuario));
-      } else {
-        sessionStorage.setItem('usuario', JSON.stringify(nuevoUsuario));
-      }
-    }
-  })*/
 }
 
 function alternarBarraSesion() {
@@ -223,10 +192,26 @@ function alternarBarraCarrito() {
   const barraCarrito = document.getElementById('barra-carrito');
   barraCarrito.classList.toggle('mostrar')
   
-  /*const usuarioLogueado = JSON.parse(localStorage.getItem('usuario') || sessionStorage.getItem('usuario'))
+  const usuarioLogueado = JSON.parse(localStorage.getItem('usuario') || sessionStorage.getItem('usuario'))
   
-  const spanUsername = document.getElementById('nombre-usuario');
+  /*const spanUsername = document.getElementById('nombre-usuario');
   spanUsername.innerText = usuarioLogueado.nickname*/
+  
+  if (usuarioLogueado === null){
+    setTimeout(() => {
+      const usuarioLogueado = JSON.parse(localStorage.getItem('usuario') || sessionStorage.getItem('usuario'))
+      const spanUsername = document.getElementById('nombre-usuario');
+      spanUsername.innerText = usuarioLogueado.nickname;
+    }, 1)
+  } else {
+      const usuarioLogueado = JSON.parse(localStorage.getItem('usuario') || sessionStorage.getItem('usuario'))
+  
+    const spanUsername = document.getElementById('nombre-usuario');
+    spanUsername.innerText = usuarioLogueado.nickname;
+  }
+  
+
+
 }
 
 
