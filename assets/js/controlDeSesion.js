@@ -1,7 +1,5 @@
 const usuarios = JSON.parse(localStorage.getItem('usuarios')) || []
 
-// buscar en storages o dejar vacio
-// si existe la sesion, borrar barra de login/registo
 let usuarioLogueado = localStorage.getItem('usuario')
 
 if (usuarioLogueado) {
@@ -33,10 +31,6 @@ function mostrarModalRegistro() {
     focusConfirm: false,
     buttonsStyling: false,
     preConfirm: () => {
-      // obtener los datos del formulario
-      // acceder a lista de usuarios y chequear si existe uno con mismo username
-      // si existe, mostrar mensaje de error
-      // si no existe, crear usuario y agregarlo a la lista de usuarios
       const nuevoUsuario = {
         nickname: document.getElementById('input-nickname').value,
         username: document.getElementById('input-username').value,
@@ -182,10 +176,10 @@ function modificarDatos() {
   
 }
 
-function alternarBarraSesion() {
-  const barraSesion = document.getElementById('barra-sesion');
-  barraSesion.classList.toggle('mostrar')
-}
+  function alternarBarraSesion() {
+    const barraSesion = document.getElementById('barra-sesion');
+    barraSesion.classList.toggle('mostrar')
+  }
 
 function alternarBarraCarrito() {
   //barra-carrito
@@ -194,9 +188,7 @@ function alternarBarraCarrito() {
   
   const usuarioLogueado = JSON.parse(localStorage.getItem('usuario') || sessionStorage.getItem('usuario'))
   
-  /*const spanUsername = document.getElementById('nombre-usuario');
-  spanUsername.innerText = usuarioLogueado.nickname*/
-  
+  //el time out esta hecho por que lo que me pasaba en el inicio de sesión era que, al estar vacío (la primera vez que lo usabas, una vez creado el LS ya no pasaba) al ser null la variable usuariologueado tiraba un error y habia un problema con el toggle. Entonces lo "asincronicé" para que esta acción la tire al final. Es lo mejor? Proablemente no. Pero fue la forma que se ocurrió de resolverlo jajaja. 
   if (usuarioLogueado === null){
     setTimeout(() => {
       const usuarioLogueado = JSON.parse(localStorage.getItem('usuario') || sessionStorage.getItem('usuario'))
